@@ -1,3 +1,5 @@
+"use client";
+
 import { XIcon } from "lucide-react";
 import { useStore } from "@/store";
 import { Badge } from "./ui/badge";

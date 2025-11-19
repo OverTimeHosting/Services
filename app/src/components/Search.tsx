@@ -1,3 +1,5 @@
+"use client";
+
 import { Input } from "./ui/input";
 import { useStore } from "@/store";
 import { Grid, List, SearchIcon, XIcon } from "lucide-react";
@@ -16,7 +18,7 @@ import { Check, ChevronsUpDown } from "lucide-react";
 import React from "react";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import SelectedTags from "./SelectedTags";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "next/navigation";
 
 const Search = () => {
   const { templates, searchQuery, setSearchQuery, setView, templatesCount, setFilteredTemplates, setTemplatesCount } =

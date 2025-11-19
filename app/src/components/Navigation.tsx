@@ -1,3 +1,5 @@
+"use client";
+
 import { ModeToggle } from "@/mode-toggle";
 import { Plus, StarIcon } from "lucide-react";
 import { Button } from "./ui/button";

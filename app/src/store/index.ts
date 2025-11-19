@@ -1,5 +1,7 @@
+"use client";
+
 import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { persist, createJSONStorage } from "zustand/middleware";
 
 interface Template {
   id: string;
@@ -64,6 +66,7 @@ export const useStore = create<TemplateStore>()(
     }),
     {
       name: "template-store",
+      storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({ view: state.view }), // Only persist the view preference
     }
   )
