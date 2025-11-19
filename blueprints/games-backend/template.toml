@@ -1,0 +1,26 @@
+[variables]
+main_domain = "${domain}"
+api_token = "${password:32}"
+dokploy_api_url = "http://localhost:3000"
+callback_url = "http://localhost:3000/api/callback"
+mongo_uri = "mongodb://mongo:damodamodamodamo@82.68.47.67:27069"
+mongo_database = "mongo"
+max_players = "1000"
+session_timeout = "3600"
+tick_rate = "20"
+
+[config]
+[[config.domains]]
+serviceName = "game-backend"
+port = 3002
+host = "${main_domain}"
+
+[config.env]
+API_TOKEN = "${api_token}"
+DOKPLOY_API_URL = "${dokploy_api_url}"
+CALLBACK_URL = "${callback_url}"
+MONGO_URI = "${mongo_uri}"
+MONGO_DATABASE = "${mongo_database}"
+MAX_PLAYERS = "${max_players}"
+SESSION_TIMEOUT = "${session_timeout}"
+TICK_RATE = "${tick_rate}"

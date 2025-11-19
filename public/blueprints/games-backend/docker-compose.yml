@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  game-backend:
+    image: ghcr.io/overtimehosting/othcloud/game-backend:latest
+    container_name: game-backend-api
+    restart: always
+    ports:
+      - 3002
+    environment:
+      GAME_CONFIG: >
+        {
+          "server": {
+            "port": 3002,
+            "token": "${API_TOKEN}",
+            "urlCallback": "${CALLBACK_URL}",
+            "dokployApiUrl": "${DOKPLOY_API_URL}"
+          },
+          "game": {
+            "maxPlayers": ${MAX_PLAYERS},
+            "sessionTimeout": ${SESSION_TIMEOUT},
+            "tickRate": ${TICK_RATE},
+            "enableLeaderboard": true,
+            "enableMatchmaking": true
+          },
+          "database": {
+            "mongoUri": "${MONGO_URI}",
+            "databaseName": "${MONGO_DATABASE}",
+            "retentionDays": 30
+          }
+        }
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3002/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3

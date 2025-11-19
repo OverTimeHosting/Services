@@ -2384,6 +2384,21 @@
     ]
   },
   {
+    "id": "games-backend",
+    "name": "Games Backend",
+    "version": "0.0.1",
+    "description": "High-performance game backend server with built-in matchmaking, leaderboards, and session management. Perfect for multiplayer games with MongoDB integration.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/overtimehosting/othcloud",
+      "website": "https://othcloud.xyz/",
+      "docs": "https://docs.othcloud.xyz/"
+    },
+    "tags": [
+      "gameservers"
+    ]
+  },
+  {
     "id": "ghost",
     "name": "Ghost",
     "version": "6.0.0",
