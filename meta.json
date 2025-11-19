@@ -28,8 +28,8 @@
     },
     "tags": [
       "automation",
-      "workflow",
-      "no-code"
+      "low-code",
+      "workflow"
     ]
   },
   {
@@ -44,9 +44,7 @@
       "docs": "https://actualbudget.org/docs"
     },
     "tags": [
-      "budgeting",
-      "finance",
-      "money"
+      "finance"
     ]
   },
   {
@@ -61,10 +59,10 @@
       "docs": "https://github.com/AdguardTeam/AdGuardHome/wiki"
     },
     "tags": [
+      "ad-blocking",
+      "network",
       "privacy",
-      "security",
-      "dns",
-      "ad-blocking"
+      "security"
     ]
   },
   {
@@ -79,10 +77,9 @@
       "docs": "https://www.adminer.org/en/plugins/"
     },
     "tags": [
-      "databases",
-      "developer-tools",
-      "mysql",
-      "postgresql"
+      "database",
+      "development",
+      "postgres"
     ]
   },
   {
@@ -98,10 +95,10 @@
     },
     "tags": [
       "activity",
-      "maps",
       "django",
-      "react",
-      "postgres"
+      "maps",
+      "postgres",
+      "react"
     ]
   },
   {
@@ -117,9 +114,8 @@
     },
     "tags": [
       "collaboration",
-      "self-hosted",
       "productivity",
-      "project-management"
+      "self-hosted"
     ]
   },
   {
@@ -134,12 +130,12 @@
       "docs": "https://www.ispyconnect.com/userguide-agent-dvr.aspx"
     },
     "tags": [
-      "surveillance",
-      "security",
-      "video",
-      "monitoring",
+      "camera",
       "dvr",
-      "camera"
+      "media",
+      "monitoring",
+      "security",
+      "surveillance"
     ]
   },
   {
@@ -154,10 +150,9 @@
       "docs": "https://akaunting.com/docs"
     },
     "tags": [
+      "database",
       "finance",
-      "accounting",
       "php",
-      "mariadb",
       "self-hosted"
     ]
   },
@@ -173,9 +168,8 @@
       "docs": "https://alist.nn.ci/guide/install/docker.html"
     },
     "tags": [
-      "file",
-      "webdav",
-      "storage"
+      "storage",
+      "webdav"
     ]
   },
   {
@@ -190,9 +184,8 @@
       "docs": "https://github.com/Rudloff/alltube/wiki"
     },
     "tags": [
-      "media",
-      "video",
-      "downloader"
+      "downloader",
+      "media"
     ]
   },
   {
@@ -207,8 +200,8 @@
       "docs": "https://github.com/ampache/ampache/wiki"
     },
     "tags": [
+      "audio",
       "media",
-      "music",
       "streaming"
     ]
   },
@@ -224,8 +217,8 @@
       "website": "https://anonupload.com/"
     },
     "tags": [
-      "file-sharing",
-      "privacy"
+      "privacy",
+      "storage"
     ]
   },
   {
@@ -274,8 +267,8 @@
       "docs": "https://anubis.techaro.lol/docs/"
     },
     "tags": [
-      "self-hosted",
-      "bot-protection"
+      "bot-protection",
+      "self-hosted"
     ]
   },
   {
@@ -291,8 +284,8 @@
     },
     "tags": [
       "ai",
-      "llm",
-      "chatbot"
+      "chatbot",
+      "llm"
     ]
   },
   {
@@ -307,11 +300,11 @@
     },
     "logo": "appflowy.png",
     "tags": [
-      "productivity",
-      "self-hosted",
-      "notes",
       "knowledge-base",
-      "notion-alternative"
+      "notes",
+      "notion-alternative",
+      "productivity",
+      "self-hosted"
     ]
   },
   {
@@ -326,8 +319,8 @@
       "docs": "https://github.com/caronc/apprise-api/wiki"
     },
     "tags": [
-      "notifications",
-      "api"
+      "api",
+      "notifications"
     ]
   },
   {
@@ -391,8 +384,7 @@
     },
     "tags": [
       "database",
-      "graph-database",
-      "nosql"
+      "graph-database"
     ]
   },
   {
@@ -407,9 +399,9 @@
       "docs": "https://docs.argilla.io/"
     },
     "tags": [
-      "machine-learning",
+      "ai",
       "data-labeling",
-      "ai"
+      "machine-learning"
     ]
   },
   {
@@ -424,9 +416,8 @@
       "docs": "https://www.audiobookshelf.org/docs"
     },
     "tags": [
-      "media",
-      "audiobooks",
-      "podcasts"
+      "audio",
+      "media"
     ]
   },
   {
@@ -442,12 +433,10 @@
     },
     "tags": [
       "authentication",
-      "authorization",
-      "2fa",
-      "sso",
+      "ldap",
+      "network",
       "security",
-      "reverse-proxy",
-      "ldap"
+      "sso"
     ]
   },
   {
@@ -463,12 +452,10 @@
     "logo": "authentik.svg",
     "tags": [
       "authentication",
-      "identity",
-      "sso",
-      "oidc",
-      "saml",
       "oauth2",
-      "self-hosted"
+      "openid-connect",
+      "self-hosted",
+      "sso"
     ]
   },
   {
@@ -484,7 +471,6 @@
     },
     "tags": [
       "authentication",
-      "authorization",
       "security"
     ]
   },
@@ -500,11 +486,11 @@
     },
     "logo": "autobase.svg",
     "tags": [
-      "database",
-      "postgres",
       "automation",
-      "self-hosted",
-      "dbaas"
+      "database",
+      "dbaas",
+      "postgres",
+      "self-hosted"
     ]
   },
   {
@@ -520,8 +506,8 @@
     },
     "tags": [
       "automation",
-      "workflow",
-      "integration"
+      "integration",
+      "workflow"
     ]
   },
   {
@@ -536,12 +522,12 @@
       "docs": "https://docs.azuracast.com/"
     },
     "tags": [
-      "radio",
-      "streaming",
-      "media",
+      "audio",
       "broadcasting",
-      "music",
-      "entertainment"
+      "entertainment",
+      "media",
+      "radio",
+      "streaming"
     ]
   },
   {
@@ -556,9 +542,9 @@
       "docs": "https://docs.babybuddy.app"
     },
     "tags": [
+      "family",
       "parenting",
-      "tracking",
-      "family"
+      "tracking"
     ]
   },
   {
@@ -588,10 +574,10 @@
       "docs": "https://sabre.io/baikal/install/"
     },
     "tags": [
-      "calendar",
-      "contacts",
       "caldav",
-      "carddav"
+      "calendar",
+      "carddav",
+      "contacts"
     ]
   },
   {
@@ -606,9 +592,9 @@
       "docs": "https://github.com/maulik9898/barrage/blob/main/README.md"
     },
     "tags": [
-      "torrents",
       "deluge",
-      "mobile"
+      "mobile",
+      "torrent"
     ]
   },
   {
@@ -638,9 +624,9 @@
       "docs": "https://www.bazarr.media/docs"
     },
     "tags": [
-      "subtitles",
+      "radarr",
       "sonarr",
-      "radarr"
+      "subtitles"
     ]
   },
   {
@@ -655,10 +641,10 @@
       "docs": "https://github.com/bentopdf/bentopdf#readme"
     },
     "tags": [
-      "pdf",
-      "converter",
       "api",
-      "utility"
+      "converter",
+      "pdf",
+      "tools"
     ]
   },
   {
@@ -673,9 +659,8 @@
       "docs": "https://beszel.dev/guide/getting-started"
     },
     "tags": [
-      "monitoring",
       "docker",
-      "alerts"
+      "monitoring"
     ]
   },
   {
@@ -690,12 +675,10 @@
       "docs": "https://github.com/bigcapitalhq/bigcapital"
     },
     "tags": [
-      "accounting",
-      "finance",
-      "bookkeeping",
-      "quickbooks",
+      "business",
       "erp",
-      "business"
+      "finance",
+      "quickbooks"
     ]
   },
   {
@@ -711,8 +694,8 @@
     },
     "tags": [
       "3d",
-      "rendering",
-      "animation"
+      "animation",
+      "rendering"
     ]
   },
   {
@@ -727,10 +710,10 @@
       "docs": "https://docs.blinko.space/"
     },
     "tags": [
-      "productivity",
+      "nextjs",
       "organization",
-      "workflow",
-      "nextjs"
+      "productivity",
+      "workflow"
     ]
   },
   {
@@ -746,11 +729,10 @@
     },
     "tags": [
       "ai",
-      "self-hosted",
-      "development",
       "chatbot",
-      "ide",
-      "llm"
+      "development",
+      "llm",
+      "self-hosted"
     ]
   },
   {
@@ -766,9 +748,8 @@
     },
     "tags": [
       "books",
-      "library",
       "database",
-      "mariadb"
+      "library"
     ]
   },
   {
@@ -799,9 +780,9 @@
       "docs": "https://github.com/mlapaglia/borgitory"
     },
     "tags": [
+      "archive",
       "backup",
       "borg",
-      "archive",
       "self-hosted"
     ]
   },
@@ -833,8 +814,8 @@
       "docs": "https://docs.browserless.io/"
     },
     "tags": [
-      "browser",
-      "automation"
+      "automation",
+      "browser"
     ]
   },
   {
@@ -849,11 +830,11 @@
       "docs": "https://budgetboard.net/"
     },
     "tags": [
+      "compose",
+      "docker",
       "finance",
       "postgres",
-      "self-hosted",
-      "docker",
-      "compose"
+      "self-hosted"
     ]
   },
   {
@@ -870,8 +851,7 @@
     "tags": [
       "database",
       "low-code",
-      "nocode",
-      "applications"
+      "no-code"
     ]
   },
   {
@@ -886,9 +866,8 @@
       "docs": "https://www.bugsink.com/docs/"
     },
     "tags": [
-      "hosting",
-      "self-hosted",
-      "development"
+      "development",
+      "self-hosted"
     ]
   },
   {
@@ -919,8 +898,8 @@
       "docs": "https://github.com/jordan-dalby/ByteStash"
     },
     "tags": [
-      "file-storage",
-      "self-hosted"
+      "self-hosted",
+      "storage"
     ]
   },
   {
@@ -935,8 +914,8 @@
     },
     "logo": "calcom.jpg",
     "tags": [
-      "scheduling",
-      "booking"
+      "booking",
+      "scheduling"
     ]
   },
   {
@@ -951,8 +930,8 @@
       "docs": "https://manual.calibre-ebook.com/"
     },
     "tags": [
-      "Documents",
-      "E-Commerce"
+      "documentation",
+      "e-commerce"
     ]
   },
   {
@@ -968,8 +947,8 @@
     },
     "tags": [
       "ebooks",
-      "media",
       "library",
+      "media",
       "self-hosted"
     ]
   },
@@ -985,10 +964,9 @@
     },
     "logo": "capso.png",
     "tags": [
-      "web",
-      "s3",
-      "mysql",
+      "database",
       "development",
+      "s3",
       "self-hosted"
     ]
   },
@@ -1004,10 +982,10 @@
       "docs": "https://carbone.io/documentation/design/overview/getting-started.html"
     },
     "tags": [
-      "Document Generation",
-      "Automation",
-      "Reporting",
-      "Productivity"
+      "analytics",
+      "automation",
+      "documents",
+      "productivity"
     ]
   },
   {
@@ -1023,14 +1001,10 @@
     },
     "tags": [
       "authentication",
-      "authorization",
       "oauth2",
-      "oidc",
-      "sso",
-      "saml",
-      "identity-management",
-      "access-management",
-      "security"
+      "openid-connect",
+      "security",
+      "sso"
     ]
   },
   {
@@ -1045,9 +1019,9 @@
       "docs": "https://github.com/dgtlmoon/changedetection.io/wiki"
     },
     "tags": [
-      "Monitoring",
-      "Data",
-      "Notifications"
+      "data-management",
+      "monitoring",
+      "notifications"
     ]
   },
   {
@@ -1062,9 +1036,9 @@
       "docs": "https://www.chatwoot.com/docs"
     },
     "tags": [
-      "support",
       "chat",
-      "customer-service"
+      "customer-service",
+      "support"
     ]
   },
   {
@@ -1079,9 +1053,9 @@
       "docs": "https://github.com/Operacle/checkcle#readme"
     },
     "tags": [
-      "security",
       "compliance",
-      "monitoring"
+      "monitoring",
+      "security"
     ]
   },
   {
@@ -1096,9 +1070,8 @@
       "docs": "https://docs.checkmate.so"
     },
     "tags": [
-      "self-hosted",
       "monitoring",
-      "uptime"
+      "self-hosted"
     ]
   },
   {
@@ -1113,11 +1086,10 @@
       "docs": "https://v4-docs.chevereto.com/"
     },
     "tags": [
-      "Image Hosting",
-      "File Management",
-      "Open Source",
-      "Multi-User",
-      "Private Albums"
+      "collaboration",
+      "file-manager",
+      "image-hosting",
+      "privacy"
     ]
   },
   {
@@ -1132,9 +1104,8 @@
       "docs": "https://chibisafe.app/docs/intro"
     },
     "tags": [
-      "media system",
-      "storage",
-      "file-sharing"
+      "media",
+      "storage"
     ]
   },
   {
@@ -1149,11 +1120,10 @@
       "docs": "https://docs.chiefonboarding.com/"
     },
     "tags": [
-      "Employee Onboarding",
-      "HR Management",
-      "Task Tracking",
-      "Role-Based Access",
-      "Document Management"
+      "authentication",
+      "documents",
+      "hr",
+      "task-management"
     ]
   },
   {
@@ -1169,8 +1139,7 @@
     },
     "tags": [
       "browser",
-      "development",
-      "web"
+      "development"
     ]
   },
   {
@@ -1185,9 +1154,7 @@
       "docs": "https://docs.classicpress.net/"
     },
     "tags": [
-      "cms",
-      "wordpress",
-      "content-management"
+      "cms"
     ]
   },
   {
@@ -1202,11 +1169,10 @@
       "docs": "https://clickhouse.com/docs"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
+      "analytics",
       "database",
       "olap",
-      "analytics"
+      "self-hosted"
     ]
   },
   {
@@ -1221,9 +1187,8 @@
       "docs": "https://docs.aws.amazon.com/cloud9/"
     },
     "tags": [
-      "ide",
       "development",
-      "cloud"
+      "storage"
     ]
   },
   {
@@ -1238,9 +1203,7 @@
       "docs": "https://cloudcmd.io/#install"
     },
     "tags": [
-      "file-manager",
-      "web-based",
-      "console"
+      "file-manager"
     ]
   },
   {
@@ -1255,10 +1218,9 @@
       "docs": "https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/"
     },
     "tags": [
-      "cloud",
-      "networking",
+      "network",
       "security",
-      "tunnel"
+      "storage"
     ]
   },
   {
@@ -1273,9 +1235,8 @@
       "docs": "https://getcockpit.com/documentation"
     },
     "tags": [
-      "cms",
-      "content-management",
-      "api"
+      "api",
+      "cms"
     ]
   },
   {
@@ -1290,9 +1251,8 @@
       "docs": "https://coder.com/docs"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
-      "builder"
+      "builder",
+      "self-hosted"
     ]
   },
   {
@@ -1307,9 +1267,9 @@
       "docs": "https://docs.codex.so"
     },
     "tags": [
-      "documentation",
+      "collaboration",
       "development",
-      "collaboration"
+      "documentation"
     ]
   },
   {
@@ -1324,9 +1284,9 @@
       "docs": "https://colanode.com/docs/"
     },
     "tags": [
+      "collaboration",
       "documentation",
-      "knowledge-base",
-      "collaboration"
+      "knowledge-base"
     ]
   },
   {
@@ -1341,9 +1301,9 @@
       "docs": "https://sdk.collaboraonline.com/docs"
     },
     "tags": [
-      "office",
+      "collaboration",
       "documents",
-      "collaboration"
+      "office"
     ]
   },
   {
@@ -1358,8 +1318,6 @@
       "docs": "https://github.com/Athou/commafeed/wiki"
     },
     "tags": [
-      "feed-reader",
-      "news-aggregator",
       "rss"
     ]
   },
@@ -1375,9 +1333,9 @@
     },
     "logo": "logo.png",
     "tags": [
+      "cms",
       "comments",
-      "discussion",
-      "website"
+      "discussion"
     ]
   },
   {
@@ -1392,9 +1350,8 @@
     },
     "logo": "logo.png",
     "tags": [
-      "comments",
-      "website",
-      "open-source"
+      "cms",
+      "comments"
     ]
   },
   {
@@ -1409,8 +1366,7 @@
       "docs": "https://docs.conduit.rs/"
     },
     "tags": [
-      "matrix",
-      "communication"
+      "chat"
     ]
   },
   {
@@ -1425,11 +1381,9 @@
       "docs": "https://conduwuit.puppyirl.gay/configuration.html"
     },
     "tags": [
-      "backend",
+      "api",
       "chat",
-      "communication",
-      "matrix",
-      "server"
+      "hosting"
     ]
   },
   {
@@ -1446,8 +1400,7 @@
     "tags": [
       "collaboration",
       "documentation",
-      "productivity",
-      "project-management"
+      "productivity"
     ]
   },
   {
@@ -1462,9 +1415,9 @@
       "docs": "https://github.com/c4illin/ConvertX#environment-variables"
     },
     "tags": [
-      "media",
       "converter",
-      "ffmpeg"
+      "ffmpeg",
+      "media"
     ]
   },
   {
@@ -1479,9 +1432,8 @@
       "docs": "https://www.convex.dev/docs"
     },
     "tags": [
-      "backend",
-      "database",
-      "api"
+      "api",
+      "database"
     ]
   },
   {
@@ -1497,9 +1449,9 @@
     },
     "tags": [
       "cookies",
-      "sync",
-      "selfhosted",
-      "privacy"
+      "privacy",
+      "self-hosted",
+      "sync"
     ]
   },
   {
@@ -1514,7 +1466,7 @@
     },
     "logo": "logo.png",
     "tags": [
-      "communication",
+      "chat",
       "community",
       "privacy"
     ]
@@ -1547,11 +1499,11 @@
       "docs": "https://github.com/unclecode/crawl4ai#readme"
     },
     "tags": [
+      "ai",
+      "api",
       "crawler",
-      "scraping",
-      "AI",
-      "LLM",
-      "API"
+      "llm",
+      "scraping"
     ]
   },
   {
@@ -1566,8 +1518,7 @@
       "docs": "https://docs.crowdsec.net"
     },
     "tags": [
-      "security",
-      "firewall"
+      "security"
     ]
   },
   {
@@ -1582,11 +1533,11 @@
       "docs": "https://github.com/sergi0g/cup"
     },
     "tags": [
-      "docker",
       "container",
+      "docker",
       "management",
-      "ui",
-      "self-hosted"
+      "self-hosted",
+      "ui"
     ]
   },
   {
@@ -1601,9 +1552,9 @@
       "docs": "https://github.com/gchq/CyberChef/wiki"
     },
     "tags": [
-      "security",
+      "analytics",
       "encryption",
-      "data-analysis"
+      "security"
     ]
   },
   {
@@ -1620,8 +1571,7 @@
     "tags": [
       "dashboard",
       "monitoring",
-      "self-hosted",
-      "homelab"
+      "self-hosted"
     ]
   },
   {
@@ -1637,9 +1587,8 @@
     },
     "tags": [
       "analytics",
-      "self-hosted",
-      "bi",
-      "monitoring"
+      "monitoring",
+      "self-hosted"
     ]
   },
   {
@@ -1672,8 +1621,8 @@
       "docs": "https://docs.directorylister.com/"
     },
     "tags": [
-      "file-manager",
       "directory-listing",
+      "file-manager",
       "php"
     ]
   },
@@ -1705,8 +1654,8 @@
     },
     "tags": [
       "discord",
-      "tickets",
-      "support"
+      "support",
+      "tickets"
     ]
   },
   {
@@ -1721,9 +1670,9 @@
       "docs": "https://meta.discourse.org/"
     },
     "tags": [
-      "forum",
       "community",
-      "discussion"
+      "discussion",
+      "forum"
     ]
   },
   {
@@ -1739,12 +1688,12 @@
       "dockerhub": "https://quay.io/repository/docling-project/docling-serve"
     },
     "tags": [
-      "document-processing",
-      "api",
       "ai",
+      "api",
       "conversion",
-      "pdf",
-      "office"
+      "document-processing",
+      "office",
+      "pdf"
     ]
   },
   {
@@ -1759,9 +1708,8 @@
       "docs": "https://docmost.com/docs/"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
-      "manager"
+      "management",
+      "self-hosted"
     ]
   },
   {
@@ -1808,8 +1756,8 @@
     "tags": [
       "domains",
       "monitoring",
-      "utilities",
-      "postgres"
+      "postgres",
+      "tools"
     ]
   },
   {
@@ -1839,9 +1787,9 @@
       "docs": "https://dozzle.dev/docs"
     },
     "tags": [
-      "monitoring",
+      "docker",
       "logs",
-      "docker"
+      "monitoring"
     ]
   },
   {
@@ -1872,8 +1820,8 @@
       "docs": "https://www.drawio.com/doc/"
     },
     "tags": [
-      "drawing",
-      "diagrams"
+      "diagrams",
+      "drawing"
     ]
   },
   {
@@ -1888,8 +1836,8 @@
       "docs": "https://hub.docker.com/r/pubuzhixing/drawnix"
     },
     "tags": [
-      "visualization",
-      "content-generation"
+      "content-generation",
+      "visualization"
     ]
   },
   {
@@ -1922,7 +1870,7 @@
     "tags": [
       "asset-tracking",
       "self-hosted",
-      "simple"
+      "tools"
     ]
   },
   {
@@ -1937,10 +1885,9 @@
       "docs": "https://github.com/dumbwareio/dumbbudget"
     },
     "tags": [
-      "budget",
       "finance",
       "self-hosted",
-      "simple"
+      "tools"
     ]
   },
   {
@@ -1955,9 +1902,9 @@
       "docs": "https://github.com/dumbwareio/dumbdrop"
     },
     "tags": [
-      "file-sharing",
       "self-hosted",
-      "simple"
+      "storage",
+      "tools"
     ]
   },
   {
@@ -1972,9 +1919,9 @@
       "docs": "https://github.com/dumbwareio/dumbpad"
     },
     "tags": [
-      "notepad",
+      "notes",
       "self-hosted",
-      "simple"
+      "tools"
     ]
   },
   {
@@ -1989,8 +1936,8 @@
       "docs": "https://docs.elastic.co/elasticsearch/"
     },
     "tags": [
-      "search",
-      "analytics"
+      "analytics",
+      "search"
     ]
   },
   {
@@ -2005,8 +1952,7 @@
       "docs": "https://emby.media/support/articles/Home.html"
     },
     "tags": [
-      "media",
-      "media system"
+      "media"
     ]
   },
   {
@@ -2036,13 +1982,13 @@
       "website": "https://erpnext.com"
     },
     "tags": [
-      "erp",
       "accounts",
+      "erp",
+      "hrms",
       "manufacturing",
-      "retail",
-      "sales",
       "pos",
-      "hrms"
+      "retail",
+      "sales"
     ]
   },
   {
@@ -2058,7 +2004,7 @@
     },
     "tags": [
       "collaboration",
-      "text-editor",
+      "notes",
       "real-time"
     ]
   },
@@ -2074,7 +2020,7 @@
       "docs": "https://evershop.io/docs/development/getting-started/introduction"
     },
     "tags": [
-      "E-Commerce",
+      "e-commerce",
       "shopping"
     ]
   },
@@ -2091,8 +2037,7 @@
     },
     "tags": [
       "api",
-      "whatsapp",
-      "messaging"
+      "chat"
     ]
   },
   {
@@ -2122,12 +2067,8 @@
       "docs": "https://github.com/mayswind/ezbookkeeping"
     },
     "tags": [
-      "bookkeeping",
       "finance",
-      "accounting",
-      "self-hosted",
-      "personal-finance",
-      "business-finance"
+      "self-hosted"
     ]
   },
   {
@@ -2158,8 +2099,8 @@
       "docs": "https://www.filestash.app/docs/"
     },
     "tags": [
+      "documents",
       "file-manager",
-      "document-editor",
       "self-hosted"
     ]
   },
@@ -2177,9 +2118,9 @@
     "tags": [
       "api",
       "crawler",
-      "scraping",
       "data-extraction",
-      "llm"
+      "llm",
+      "scraping"
     ]
   },
   {
@@ -2196,8 +2137,8 @@
     "tags": [
       "gaming",
       "gta",
-      "multiplayer",
-      "server"
+      "hosting",
+      "multiplayer"
     ]
   },
   {
@@ -2230,10 +2171,10 @@
       "docs": "https://github.com/FlareSolverr/FlareSolverr"
     },
     "tags": [
-      "proxy",
-      "cloudflare",
       "bypass",
-      "ddos-guard"
+      "cloudflare",
+      "ddos-guard",
+      "network"
     ]
   },
   {
@@ -2250,7 +2191,6 @@
     "tags": [
       "notes",
       "productivity",
-      "markdown",
       "self-hosted"
     ]
   },
@@ -2266,12 +2206,10 @@
       "docs": "https://github.com/dullage/flatnotes"
     },
     "tags": [
+      "authentication",
       "notes",
       "productivity",
-      "markdown",
-      "self-hosted",
-      "totp",
-      "2fa"
+      "self-hosted"
     ]
   },
   {
@@ -2286,10 +2224,10 @@
       "docs": "https://docs.flowiseai.com/"
     },
     "tags": [
-      "AI",
-      "LLM",
-      "workflow",
-      "automation"
+      "ai",
+      "automation",
+      "llm",
+      "workflow"
     ]
   },
   {
@@ -2304,10 +2242,10 @@
       "docs": "https://fmd-foss.org/docs/fmd-server/overview"
     },
     "tags": [
-      "phone",
-      "security",
       "gps",
-      "location"
+      "location",
+      "phone",
+      "security"
     ]
   },
   {
@@ -2353,8 +2291,8 @@
       "docs": "https://formbricks.com/docs"
     },
     "tags": [
-      "forms",
-      "analytics"
+      "analytics",
+      "forms"
     ]
   },
   {
@@ -2369,11 +2307,11 @@
       "website": "https://frappe.io/hr"
     },
     "tags": [
-      "hrms",
-      "payroll",
-      "leaves",
-      "expenses",
       "attendance",
+      "expenses",
+      "hrms",
+      "leaves",
+      "payroll",
       "performace"
     ]
   },
@@ -2389,11 +2327,11 @@
     },
     "logo": "freescout.svg",
     "tags": [
-      "helpdesk",
-      "support",
-      "email",
       "customer-service",
-      "self-hosted"
+      "email",
+      "helpdesk",
+      "self-hosted",
+      "support"
     ]
   },
   {
@@ -2408,12 +2346,9 @@
       "docs": "https://freshrss.github.io/FreshRSS/"
     },
     "tags": [
+      "reader",
       "rss",
-      "feed-reader",
-      "news",
-      "self-hosted",
-      "aggregator",
-      "reader"
+      "self-hosted"
     ]
   },
   {
@@ -2428,8 +2363,8 @@
       "docs": "https://garagehq.deuxfleurs.fr/documentation/quick-start/"
     },
     "tags": [
-      "storage",
-      "object-storage"
+      "s3",
+      "storage"
     ]
   },
   {
@@ -2444,8 +2379,8 @@
       "docs": "https://garagehq.deuxfleurs.fr/documentation/quick-start/"
     },
     "tags": [
-      "storage",
-      "object-storage"
+      "s3",
+      "storage"
     ]
   },
   {
@@ -2475,12 +2410,10 @@
       "docs": "https://github.com/arunavo4/gitea-mirror#readme"
     },
     "tags": [
+      "automation",
       "git",
       "mirror",
-      "github",
-      "gitea",
-      "self-hosted",
-      "automation"
+      "self-hosted"
     ]
   },
   {
@@ -2495,10 +2428,9 @@
       "docs": "https://docs.gitea.com/"
     },
     "tags": [
+      "database",
+      "development",
       "git",
-      "scm",
-      "mysql",
-      "developer-tools",
       "self-hosted"
     ]
   },
@@ -2514,10 +2446,9 @@
       "docs": "https://docs.gitea.com/"
     },
     "tags": [
+      "development",
       "git",
-      "scm",
       "postgres",
-      "developer-tools",
       "self-hosted"
     ]
   },
@@ -2533,9 +2464,8 @@
       "docs": "https://docs.gitea.com/"
     },
     "tags": [
+      "development",
       "git",
-      "scm",
-      "developer-tools",
       "self-hosted"
     ]
   },
@@ -2552,10 +2482,9 @@
     },
     "tags": [
       "analytics",
-      "s3",
       "monitoring",
-      "sentry",
-      "metrics"
+      "s3",
+      "sentry"
     ]
   },
   {
@@ -2570,10 +2499,9 @@
       "docs": "https://docs.gitlab.com/ee/"
     },
     "tags": [
+      "devops",
       "git",
-      "ci-cd",
-      "version-control",
-      "project-management"
+      "productivity"
     ]
   },
   {
@@ -2590,8 +2518,8 @@
     "tags": [
       "dashboard",
       "monitoring",
-      "widgets",
-      "rss"
+      "rss",
+      "widgets"
     ]
   },
   {
@@ -2606,7 +2534,7 @@
       "docs": "https://glitchtip.com/documentation"
     },
     "tags": [
-      "hosting"
+      "self-hosted"
     ]
   },
   {
@@ -2621,9 +2549,9 @@
       "docs": "https://glpi-project.org/documentation/"
     },
     "tags": [
-      "self-hosted",
-      "project-management",
-      "management"
+      "management",
+      "productivity",
+      "self-hosted"
     ]
   },
   {
@@ -2638,10 +2566,9 @@
       "docs": "https://github.com/aldinokemal/go-whatsapp-web-multidevice"
     },
     "tags": [
-      "whatsapp",
-      "self-hosted",
-      "open-source",
-      "api"
+      "api",
+      "chat",
+      "self-hosted"
     ]
   },
   {
@@ -2657,7 +2584,6 @@
     },
     "tags": [
       "api",
-      "backend",
       "pdf",
       "tools"
     ]
@@ -2690,8 +2616,8 @@
     },
     "tags": [
       "bookmarks",
-      "self-hosted",
-      "knowledge-management"
+      "knowledge-base",
+      "self-hosted"
     ]
   },
   {
@@ -2706,11 +2632,9 @@
       "docs": "https://support.getgrist.com/self-managed/"
     },
     "tags": [
-      "spreadsheet",
       "database",
       "productivity",
-      "self-hosted",
-      "data-management"
+      "self-hosted"
     ]
   },
   {
@@ -2725,9 +2649,9 @@
       "docs": "https://habitica.fandom.com/wiki/Setting_up_Habitica_Locally"
     },
     "tags": [
-      "productivity",
       "gamification",
       "habits",
+      "productivity",
       "self-hosted"
     ]
   },
@@ -2743,8 +2667,8 @@
       "docs": "https://docs.heyform.net"
     },
     "tags": [
-      "form",
       "builder",
+      "form",
       "questionnaire",
       "quiz",
       "survey"
@@ -2762,9 +2686,8 @@
       "docs": "https://hi.events/docs"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
-      "manager"
+      "management",
+      "self-hosted"
     ]
   },
   {
@@ -2779,9 +2702,9 @@
       "docs": "https://docs.hoarder.app/"
     },
     "tags": [
-      "self-hosted",
       "bookmarks",
-      "link-sharing"
+      "self-hosted",
+      "sharing"
     ]
   },
   {
@@ -2812,11 +2735,11 @@
       "docs": "https://www.home-assistant.io/getting-started/onboarding/"
     },
     "tags": [
-      "iot",
       "home-automation",
+      "hosting",
       "internet-of-things",
-      "self-hosted",
-      "server"
+      "iot",
+      "self-hosted"
     ]
   },
   {
@@ -2831,11 +2754,11 @@
       "docs": "https://github.com/homebridge/homebridge/wiki"
     },
     "tags": [
-      "iot",
       "homekit",
+      "hosting",
       "internet-of-things",
-      "self-hosted",
-      "server"
+      "iot",
+      "self-hosted"
     ]
   },
   {
@@ -2846,10 +2769,10 @@
     "logo": "image.png",
     "tags": [
       "api",
-      "testing",
       "development",
+      "graphql",
       "postman-alternative",
-      "graphql"
+      "testing"
     ],
     "links": {
       "website": "https://hoppscotch.io/",
@@ -2870,11 +2793,10 @@
       "discord": "https://discord.gg/kc6xGmjzVS"
     },
     "tags": [
-      "productivity",
-      "photo",
-      "task-management",
+      "database",
+      "photos",
       "php",
-      "mariadb"
+      "productivity"
     ]
   },
   {
@@ -2889,9 +2811,9 @@
       "docs": "https://docs.huly.io/"
     },
     "tags": [
-      "project-management",
       "community",
-      "discussion"
+      "discussion",
+      "productivity"
     ]
   },
   {
@@ -2906,11 +2828,10 @@
       "docs": "https://github.com/xuemian168/kuno#readme"
     },
     "tags": [
-      "blog",
-      "i18n",
-      "nextjs",
+      "cms",
       "go",
-      "web"
+      "i18n",
+      "nextjs"
     ]
   },
   {
@@ -2925,12 +2846,10 @@
       "docs": "https://ihatemoney.readthedocs.io/"
     },
     "tags": [
-      "budget",
-      "finance",
       "expense-sharing",
-      "self-hosted",
-      "money-management",
-      "group-finances"
+      "finance",
+      "group-finances",
+      "self-hosted"
     ]
   },
   {
@@ -2945,10 +2864,9 @@
       "docs": "https://immich.app/docs/overview/introduction"
     },
     "tags": [
-      "photos",
-      "videos",
       "backup",
-      "media"
+      "media",
+      "photos"
     ]
   },
   {
@@ -2963,8 +2881,7 @@
       "docs": "https://infisical.com/docs/documentation/getting-started/introduction"
     },
     "tags": [
-      "self-hosted",
-      "open-source"
+      "self-hosted"
     ]
   },
   {
@@ -2979,10 +2896,9 @@
       "docs": "https://docs.influxdata.com/influxdb/v2/"
     },
     "tags": [
+      "database",
       "self-hosted",
-      "open-source",
-      "storage",
-      "database"
+      "storage"
     ]
   },
   {
@@ -2997,11 +2913,11 @@
       "docs": "https://www.inngest.com/docs/self-hosting"
     },
     "tags": [
-      "workflow",
       "automation",
+      "events",
       "self-hosted",
       "serverless",
-      "events"
+      "workflow"
     ]
   },
   {
@@ -3016,9 +2932,9 @@
       "docs": "https://github.com/InvoiceShelf/invoiceshelf#readme"
     },
     "tags": [
-      "invoice",
       "business",
-      "finance"
+      "finance",
+      "invoicing"
     ]
   },
   {
@@ -3033,7 +2949,7 @@
       "docs": "https://it-tools.tech/docs"
     },
     "tags": [
-      "developer",
+      "development",
       "tools"
     ]
   },
@@ -3051,8 +2967,8 @@
     "tags": [
       "java",
       "minecraft",
-      "runtime",
-      "pterodactyl"
+      "pterodactyl",
+      "runtime"
     ]
   },
   {
@@ -3067,7 +2983,7 @@
       "docs": "https://jellyfin.org/docs/"
     },
     "tags": [
-      "media system"
+      "media"
     ]
   },
   {
@@ -3082,7 +2998,7 @@
       "docs": "https://kaneo.app/docs/"
     },
     "tags": [
-      "Task Tracking"
+      "task-management"
     ]
   },
   {
@@ -3097,13 +3013,12 @@
       "docs": "https://github.com/karakeep-app/karakeep/tree/main/docs"
     },
     "tags": [
-      "bookmarks",
-      "bookmark-manager",
-      "self-hosted",
       "ai",
-      "search",
+      "bookmarks",
       "notes",
-      "productivity"
+      "productivity",
+      "search",
+      "self-hosted"
     ]
   },
   {
@@ -3119,9 +3034,8 @@
     },
     "tags": [
       "monitoring",
-      "status-page",
-      "alerting",
-      "self-hosted"
+      "self-hosted",
+      "status-page"
     ]
   },
   {
@@ -3152,10 +3066,9 @@
     },
     "tags": [
       "authentication",
-      "identity",
-      "sso",
       "oauth2",
-      "openid-connect"
+      "openid-connect",
+      "sso"
     ]
   },
   {
@@ -3170,9 +3083,9 @@
       "docs": "https://www.kimai.org/documentation"
     },
     "tags": [
-      "invoice",
       "business",
-      "finance"
+      "finance",
+      "invoicing"
     ]
   },
   {
@@ -3187,10 +3100,9 @@
       "docs": "https://github.com/TomBursch/kitchenowl/wiki"
     },
     "tags": [
-      "self-hosted",
-      "recipes",
       "grocery",
-      "personal"
+      "recipes",
+      "self-hosted"
     ]
   },
   {
@@ -3205,10 +3117,9 @@
       "docs": "https://github.com/eduardolat/kokoro-web#readme"
     },
     "tags": [
-      "text-to-speech",
       "ai",
-      "voice",
-      "web"
+      "text-to-speech",
+      "voice"
     ]
   },
   {
@@ -3224,7 +3135,7 @@
     },
     "tags": [
       "link-shortener",
-      "link-sharing"
+      "sharing"
     ]
   },
   {
@@ -3255,8 +3166,8 @@
     },
     "tags": [
       "email",
-      "self-hosted",
-      "productivity"
+      "productivity",
+      "self-hosted"
     ]
   },
   {
@@ -3271,8 +3182,8 @@
       "docs": "https://docs.libredesk.io/introduction"
     },
     "tags": [
-      "storage",
-      "object-storage"
+      "s3",
+      "storage"
     ]
   },
   {
@@ -3287,10 +3198,10 @@
       "docs": "https://docs.libretranslate.com/"
     },
     "tags": [
-      "translation",
       "api",
+      "language",
       "nlp",
-      "language"
+      "translation"
     ]
   },
   {
@@ -3305,7 +3216,7 @@
       "docs": "https://github.com/sissbruecker/linkding/tree/master/docs"
     },
     "tags": [
-      "bookmark-manager",
+      "bookmarks",
       "self-hosted"
     ]
   },
@@ -3322,7 +3233,6 @@
     },
     "tags": [
       "bio",
-      "personal",
       "cms",
       "php"
     ]
@@ -3340,7 +3250,7 @@
     },
     "tags": [
       "bookmarks",
-      "link-sharing"
+      "sharing"
     ]
   },
   {
@@ -3356,8 +3266,8 @@
     },
     "tags": [
       "email",
-      "newsletter",
-      "mailing-list"
+      "mailing-list",
+      "newsletter"
     ]
   },
   {
@@ -3373,10 +3283,10 @@
     },
     "tags": [
       "ai",
-      "proxy",
       "llm",
-      "openai-compatible",
-      "monitoring"
+      "monitoring",
+      "network",
+      "openai-compatible"
     ]
   },
   {
@@ -3391,11 +3301,11 @@
       "docs": "https://docs.livekit.io/"
     },
     "tags": [
-      "Video",
-      "Audio",
-      "Real-time",
-      "Streaming",
-      "Webrtc"
+      "audio",
+      "real-time",
+      "streaming",
+      "video",
+      "webrtc"
     ]
   },
   {
@@ -3410,7 +3320,7 @@
       "docs": "https://lobehub.com/docs/self-hosting/platform/docker-compose"
     },
     "tags": [
-      "IA",
+      "ai",
       "chat"
     ]
   },
@@ -3426,9 +3336,9 @@
       "docs": "https://github.com/Lodestone-Team/lodestone/wiki"
     },
     "tags": [
-      "minecraft",
       "hosting",
-      "server"
+      "minecraft",
+      "self-hosted"
     ]
   },
   {
@@ -3443,8 +3353,7 @@
       "docs": "https://docs.logto.io/introduction"
     },
     "tags": [
-      "identity",
-      "auth"
+      "authentication"
     ]
   },
   {
@@ -3459,9 +3368,8 @@
       "docs": "https://docs.lowcoder.cloud/lowcoder-documentation"
     },
     "tags": [
-      "low-code",
-      "no-code",
-      "development"
+      "development",
+      "low-code"
     ]
   },
   {
@@ -3476,9 +3384,8 @@
       "docs": "https://github.com/dockur/macos?tab=readme-ov-file#how-do-i-use-it"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
-      "os"
+      "os",
+      "self-hosted"
     ]
   },
   {
@@ -3493,8 +3400,7 @@
       "docs": "https://mailpit.axllent.org/docs/"
     },
     "tags": [
-      "email",
-      "smtp"
+      "email"
     ]
   },
   {
@@ -3542,10 +3448,10 @@
     },
     "tags": [
       "image-hosting",
-      "file-sharing",
-      "self-hosted",
       "media",
-      "gallery"
+      "photos",
+      "self-hosted",
+      "storage"
     ]
   },
   {
@@ -3560,9 +3466,9 @@
       "docs": "https://docs.mealie.io/"
     },
     "tags": [
+      "meal-planning",
       "recipes",
-      "shopping-list",
-      "meal-planning"
+      "shopping-list"
     ]
   },
   {
@@ -3592,9 +3498,9 @@
       "docs": "https://www.usememos.com/docs"
     },
     "tags": [
-      "productivity",
+      "bookmarks",
       "notes",
-      "bookmarks"
+      "productivity"
     ]
   },
   {
@@ -3609,8 +3515,8 @@
       "docs": "https://www.metabase.com/docs/"
     },
     "tags": [
-      "database",
-      "dashboard"
+      "dashboard",
+      "database"
     ]
   },
   {
@@ -3626,8 +3532,8 @@
     },
     "tags": [
       "downloader",
-      "youtube",
-      "media"
+      "media",
+      "youtube"
     ]
   },
   {
@@ -3657,9 +3563,9 @@
       "docs": "https://docs.mixpost.app/"
     },
     "tags": [
-      "social-media",
       "management",
-      "scheduling"
+      "scheduling",
+      "social-media"
     ]
   },
   {
@@ -3674,9 +3580,8 @@
       "docs": "https://github.com/danvergara/morphos-server#readme"
     },
     "tags": [
-      "server",
-      "orchestration",
-      "lightweight"
+      "hosting",
+      "orchestration"
     ]
   },
   {
@@ -3691,20 +3596,19 @@
       "docs": "https://docs.movary.org/"
     },
     "tags": [
-      "media",
-      "movies",
-      "movie-tracker",
-      "self-hosted",
-      "plex",
-      "jellyfin",
+      "analytics",
       "emby",
+      "jellyfin",
       "kodi",
-      "trakt",
       "letterboxd",
+      "media",
+      "movie-tracker",
       "netflix",
+      "plex",
+      "rating",
+      "self-hosted",
       "tmdb",
-      "statistics",
-      "rating"
+      "trakt"
     ]
   },
   {
@@ -3736,10 +3640,10 @@
     "tags": [
       "ai",
       "automation",
-      "workflow",
       "low-code",
+      "ollama",
       "postgres",
-      "ollama"
+      "workflow"
     ]
   },
   {
@@ -3755,9 +3659,9 @@
     },
     "tags": [
       "automation",
-      "workflow",
       "low-code",
-      "postgres"
+      "postgres",
+      "workflow"
     ]
   },
   {
@@ -3772,12 +3676,11 @@
       "docs": "https://www.navidrome.org/docs/"
     },
     "tags": [
-      "music",
-      "streaming",
-      "media-server",
-      "subsonic",
+      "audio",
+      "media",
       "self-hosted",
-      "audio"
+      "streaming",
+      "subsonic"
     ]
   },
   {
@@ -3793,9 +3696,9 @@
     },
     "tags": [
       "browser",
-      "virtual",
+      "remote",
       "sharing",
-      "remote"
+      "virtual"
     ]
   },
   {
@@ -3810,11 +3713,10 @@
       "docs": "https://learn.netdata.cloud/"
     },
     "tags": [
-      "monitoring",
-      "metrics",
       "analytics",
-      "performance",
-      "infrastructure"
+      "infrastructure",
+      "monitoring",
+      "performance"
     ]
   },
   {
@@ -3829,10 +3731,8 @@
       "docs": "https://github.com/lissy93/networking#readme"
     },
     "tags": [
-      "networking",
-      "tools",
-      "utilities",
-      "web"
+      "network",
+      "tools"
     ]
   },
   {
@@ -3863,10 +3763,10 @@
       "docs": "https://nextjs.org/docs"
     },
     "tags": [
-      "nextjs",
-      "postgresql",
       "database",
-      "framework"
+      "framework",
+      "nextjs",
+      "postgres"
     ]
   },
   {
@@ -3897,9 +3797,9 @@
     "logo": "nocodb.png",
     "tags": [
       "database",
-      "spreadsheet",
       "low-code",
-      "nocode"
+      "no-code",
+      "productivity"
     ]
   },
   {
@@ -3914,9 +3814,9 @@
       "docs": "https://docs.notifuse.com/"
     },
     "tags": [
-      "newsletter",
+      "chat",
       "email",
-      "communication",
+      "newsletter",
       "notifications"
     ]
   },
@@ -3932,9 +3832,8 @@
       "docs": "https://docs.ntfy.sh/"
     },
     "tags": [
-      "alerting",
-      "alerts",
       "api",
+      "monitoring",
       "notifications",
       "self-hosted"
     ]
@@ -3952,8 +3851,8 @@
     },
     "tags": [
       "database",
-      "sync",
-      "obsidian"
+      "obsidian",
+      "sync"
     ]
   },
   {
@@ -4013,10 +3912,10 @@
       "docs": "https://pkp.sfu.ca/ojs/docs/"
     },
     "tags": [
-      "publishing",
+      "academic",
+      "cms",
       "journal",
-      "research",
-      "academic"
+      "research"
     ]
   },
   {
@@ -4031,10 +3930,8 @@
       "docs": "https://github.com/iib0011/omni-tools"
     },
     "tags": [
-      "tools",
-      "utilities",
-      "collection",
-      "self-hosted"
+      "self-hosted",
+      "tools"
     ]
   },
   {
@@ -4049,8 +3946,8 @@
       "docs": "https://docs.onedev.io/"
     },
     "tags": [
-      "self-hosted",
-      "development"
+      "development",
+      "self-hosted"
     ]
   },
   {
@@ -4065,7 +3962,7 @@
       "docs": "https://docs.onetimesecret.com"
     },
     "tags": [
-      "auth",
+      "authentication",
       "password",
       "secret",
       "secure"
@@ -4101,7 +3998,7 @@
       "ai",
       "chatbot",
       "inference",
-      "frontend"
+      "ui"
     ]
   },
   {
@@ -4131,9 +4028,9 @@
       "docs": "https://www.open-notebook.ai/get-started.html"
     },
     "tags": [
-      "notebook",
       "ai",
       "database",
+      "notebook",
       "surrealdb"
     ]
   },
@@ -4149,10 +4046,10 @@
       "docs": "https://github.com/thomiceli/opengist"
     },
     "tags": [
-      "pastebin",
       "code",
-      "snippets",
-      "self-hosted"
+      "pastebin",
+      "self-hosted",
+      "snippets"
     ]
   },
   {
@@ -4167,8 +4064,8 @@
       "docs": "https://github.com/all-hands-ai/OpenHands"
     },
     "tags": [
-      "ai",
       "agents",
+      "ai",
       "llm",
       "openai"
     ]
@@ -4200,12 +4097,11 @@
     },
     "logo": "logo.svg",
     "tags": [
-      "web",
-      "proxy",
-      "security",
-      "self-hosted",
+      "network",
+      "nginx",
       "openresty",
-      "nginx"
+      "security",
+      "self-hosted"
     ]
   },
   {
@@ -4220,11 +4116,11 @@
       "docs": "https://github.com/openspeedtest/Speed-Test/wiki"
     },
     "tags": [
-      "network",
-      "testing",
-      "performance",
+      "bandwidth",
       "monitoring",
-      "bandwidth"
+      "network",
+      "performance",
+      "testing"
     ]
   },
   {
@@ -4239,10 +4135,10 @@
       "docs": "https://github.com/redimp/otterwiki/wiki"
     },
     "tags": [
-      "wiki",
       "documentation",
       "knowledge-base",
-      "markdown"
+      "notes",
+      "wiki"
     ]
   },
   {
@@ -4274,12 +4170,12 @@
       "docs": "https://owncast.online/docs/"
     },
     "tags": [
-      "streaming",
-      "live-video",
-      "chat",
       "broadcasting",
+      "chat",
+      "live-video",
+      "rtmp",
       "self-hosted",
-      "rtmp"
+      "streaming"
     ]
   },
   {
@@ -4294,9 +4190,8 @@
       "docs": "https://palmr.kyantech.com.br/docs/3.0-beta"
     },
     "tags": [
-      "file-sharing",
       "self-hosted",
-      "open-source"
+      "storage"
     ]
   },
   {
@@ -4311,10 +4206,10 @@
       "docs": "https://github.com/interaapps/pastefy/wiki"
     },
     "tags": [
-      "pastebin",
-      "text-sharing",
       "collaboration",
-      "oauth2"
+      "oauth2",
+      "pastebin",
+      "sharing"
     ]
   },
   {
@@ -4329,13 +4224,11 @@
       "docs": "https://paymenter.org/docs/"
     },
     "tags": [
-      "billing",
-      "payment",
-      "hosting",
-      "invoicing",
-      "business",
       "automation",
-      "client-management"
+      "business",
+      "crm",
+      "invoicing",
+      "self-hosted"
     ]
   },
   {
@@ -4350,8 +4243,8 @@
       "docs": "https://docs.penpot.app/"
     },
     "tags": [
-      "design",
-      "collaboration"
+      "collaboration",
+      "design"
     ]
   },
   {
@@ -4383,9 +4276,9 @@
     },
     "logo": "pgadmin.webp",
     "tags": [
+      "admin",
       "database",
-      "postgres",
-      "admin"
+      "postgres"
     ]
   },
   {
@@ -4434,8 +4327,8 @@
     "tags": [
       "image-hosting",
       "media",
-      "self-hosted",
-      "postgres"
+      "postgres",
+      "self-hosted"
     ]
   },
   {
@@ -4450,9 +4343,9 @@
       "docs": "https://github.com/kieraneglin/pinchflat"
     },
     "tags": [
-      "youtube",
       "downloader",
-      "media"
+      "media",
+      "youtube"
     ]
   },
   {
@@ -4482,9 +4375,7 @@
       "docs": "https://plark.com/get-started"
     },
     "tags": [
-      "cms",
-      "content-management",
-      "blog"
+      "cms"
     ]
   },
   {
@@ -4515,9 +4406,9 @@
     },
     "tags": [
       "email",
-      "newsletter",
       "mailing-list",
-      "marketing"
+      "marketing",
+      "newsletter"
     ]
   },
   {
@@ -4532,8 +4423,7 @@
       "docs": "https://pocket-id.org/docs"
     },
     "tags": [
-      "identity",
-      "auth"
+      "authentication"
     ]
   },
   {
@@ -4548,9 +4438,8 @@
       "docs": "https://pocketbase.io/docs/"
     },
     "tags": [
-      "backend",
-      "database",
-      "api"
+      "api",
+      "database"
     ]
   },
   {
@@ -4565,11 +4454,11 @@
       "docs": "https://codeberg.org/ashley/poke"
     },
     "tags": [
-      "video",
-      "youtube-alternative",
-      "self-hosted",
+      "media",
       "privacy",
-      "streaming"
+      "self-hosted",
+      "streaming",
+      "youtube-alternative"
     ]
   },
   {
@@ -4584,8 +4473,8 @@
       "docs": "https://docs.portainer.io/"
     },
     "tags": [
-      "cloud",
-      "monitoring"
+      "monitoring",
+      "storage"
     ]
   },
   {
@@ -4601,14 +4490,9 @@
       "docker": "https://hub.docker.com/r/analogic/poste.io"
     },
     "tags": [
-      "email",
-      "mail-server",
-      "smtp",
-      "imap",
-      "pop3",
       "antispam",
       "antivirus",
-      "webmail"
+      "email"
     ]
   },
   {
@@ -4623,8 +4507,8 @@
       "docs": "https://postgresus.com"
     },
     "tags": [
-      "postgres",
       "backup",
+      "postgres",
       "s3"
     ]
   },
@@ -4640,9 +4524,7 @@
       "docs": "https://docs.postiz.com"
     },
     "tags": [
-      "cms",
-      "content-management",
-      "publishing"
+      "cms"
     ]
   },
   {
@@ -4675,9 +4557,7 @@
       "docs": "https://prometheus.io/docs/introduction/overview/"
     },
     "tags": [
-      "monitoring",
-      "alerting",
-      "metrics"
+      "monitoring"
     ]
   },
   {
@@ -4692,9 +4572,8 @@
       "docs": "https://pterodactyl.io/project/introduction.html"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
-      "management"
+      "management",
+      "self-hosted"
     ]
   },
   {
@@ -4709,9 +4588,8 @@
       "docs": "https://pyrodactyl.dev/docs"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
-      "management"
+      "management",
+      "self-hosted"
     ]
   },
   {
@@ -4726,9 +4604,9 @@
       "docs": "https://github.com/qbittorrent/qBittorrent/wiki"
     },
     "tags": [
-      "torrent",
-      "download",
-      "file-sharing"
+      "downloader",
+      "storage",
+      "torrent"
     ]
   },
   {
@@ -4743,9 +4621,9 @@
       "docs": "https://qdrant.tech/documentation/"
     },
     "tags": [
-      "vector-db",
       "database",
-      "search"
+      "search",
+      "vector-db"
     ]
   },
   {
@@ -4777,8 +4655,8 @@
     },
     "logo": "registry.png",
     "tags": [
-      "registry",
       "docker",
+      "registry",
       "self-hosted"
     ]
   },
@@ -4809,9 +4687,8 @@
       "docs": "https://roundcube.net/about/"
     },
     "tags": [
-      "self-hosted",
       "email",
-      "webmail"
+      "self-hosted"
     ]
   },
   {
@@ -4826,10 +4703,8 @@
       "docs": "https://rss-bridge.github.io/rss-bridge/General/Project_goals.html"
     },
     "tags": [
-      "rss",
-      "feeds",
-      "news",
-      "content"
+      "cms",
+      "rss"
     ]
   },
   {
@@ -4844,8 +4719,8 @@
       "docs": "https://docs.rsshub.app/"
     },
     "tags": [
-      "rss",
       "api",
+      "rss",
       "self-hosted"
     ]
   },
@@ -4861,9 +4736,9 @@
       "docs": "https://rustdesk.com/docs/"
     },
     "tags": [
+      "productivity",
       "remote-desktop",
-      "self-hosted",
-      "productivity"
+      "self-hosted"
     ]
   },
   {
@@ -4878,10 +4753,9 @@
       "docs": "https://github.com/crazy-max/docker-rtorrent-rutorrent"
     },
     "tags": [
-      "torrent",
+      "downloader",
       "rtorrent",
-      "webui",
-      "downloader"
+      "torrent"
     ]
   },
   {
@@ -4912,8 +4786,8 @@
     },
     "tags": [
       "media",
-      "tracking",
-      "self-hosted"
+      "self-hosted",
+      "tracking"
     ]
   },
   {
@@ -4947,7 +4821,6 @@
     },
     "tags": [
       "file-manager",
-      "file-sharing",
       "storage"
     ]
   },
@@ -4963,11 +4836,11 @@
       "docs": "https://docs.searxng.github.io/"
     },
     "tags": [
-      "search-engine",
       "metasearch",
       "privacy",
-      "self-hosted",
-      "aggregator"
+      "rss",
+      "search-engine",
+      "self-hosted"
     ]
   },
   {
@@ -4999,13 +4872,11 @@
       "docs": "https://signoz.io/docs/"
     },
     "tags": [
-      "monitoring",
-      "observability",
-      "metrics",
-      "traces",
+      "apm",
       "logs",
+      "monitoring",
       "opentelemetry",
-      "apm"
+      "traces"
     ]
   },
   {
@@ -5020,10 +4891,9 @@
       "docs": "https://silverbullet.md/docs"
     },
     "tags": [
-      "notes",
       "knowledge-base",
-      "productivity",
-      "markdown"
+      "notes",
+      "productivity"
     ]
   },
   {
@@ -5055,10 +4925,10 @@
       "docs": "https://github.com/UraniaDev/snapp"
     },
     "tags": [
+      "authentication",
       "screenshot",
-      "sharing",
       "self-hosted",
-      "authentication"
+      "sharing"
     ]
   },
   {
@@ -5089,8 +4959,8 @@
     "logo": "spacedrive.png",
     "tags": [
       "file-manager",
-      "vdfs",
-      "storage"
+      "storage",
+      "vdfs"
     ]
   },
   {
@@ -5105,9 +4975,7 @@
       "docs": "https://docs.stack-auth.com/next/overview"
     },
     "tags": [
-      "authentication",
-      "auth",
-      "authorization"
+      "authentication"
     ]
   },
   {
@@ -5123,12 +4991,9 @@
     },
     "tags": [
       "email",
-      "smtp",
-      "jmap",
       "imap4",
-      "pop3",
-      "self-hosted",
-      "mail-server"
+      "jmap",
+      "self-hosted"
     ]
   },
   {
@@ -5176,10 +5041,9 @@
       "website": "https://www.storyden.org/"
     },
     "tags": [
-      "forum",
-      "discussion",
       "community",
-      "open-source"
+      "discussion",
+      "forum"
     ]
   },
   {
@@ -5213,10 +5077,8 @@
     },
     "tags": [
       "analytics",
-      "bi",
       "dashboard",
-      "database",
-      "sql"
+      "database"
     ]
   },
   {
@@ -5232,7 +5094,6 @@
     },
     "tags": [
       "database",
-      "sql",
       "surrealdb"
     ]
   },
@@ -5264,9 +5125,9 @@
     },
     "tags": [
       "database",
-      "spreadsheet",
       "low-code",
-      "nocode"
+      "no-code",
+      "productivity"
     ]
   },
   {
@@ -5282,9 +5143,7 @@
     },
     "tags": [
       "analytics",
-      "monitoring",
-      "web",
-      "uptime"
+      "monitoring"
     ]
   },
   {
@@ -5299,9 +5158,9 @@
       "docs": "https://tolgee.io/platform"
     },
     "tags": [
-      "self-hosted",
       "i18n",
       "localization",
+      "self-hosted",
       "translations"
     ]
   },
@@ -5318,8 +5177,8 @@
     },
     "tags": [
       "file-sync",
-      "file-sharing",
-      "self-hosted"
+      "self-hosted",
+      "storage"
     ]
   },
   {
@@ -5334,9 +5193,9 @@
       "docs": "https://hub.docker.com/r/domistyle/tor-browser"
     },
     "tags": [
+      "browser",
       "privacy",
       "security",
-      "browser",
       "tor"
     ]
   },
@@ -5352,8 +5211,7 @@
       "docs": "https://trigger.dev/docs"
     },
     "tags": [
-      "event-driven",
-      "applications"
+      "event-driven"
     ]
   },
   {
@@ -5368,9 +5226,8 @@
       "docs": "https://github.com/zadam/trilium/wiki/"
     },
     "tags": [
-      "self-hosted",
       "productivity",
-      "personal-use"
+      "self-hosted"
     ]
   },
   {
@@ -5400,9 +5257,9 @@
       "docs": "https://docs.twenty.com"
     },
     "tags": [
+      "business",
       "crm",
-      "sales",
-      "business"
+      "sales"
     ]
   },
   {
@@ -5417,9 +5274,8 @@
       "docs": "https://docs.typebot.io/get-started/introduction"
     },
     "tags": [
-      "chatbot",
       "builder",
-      "open-source"
+      "chatbot"
     ]
   },
   {
@@ -5434,7 +5290,6 @@
       "docs": "http://docs.typecho.org"
     },
     "tags": [
-      "blog",
       "cms",
       "php"
     ]
@@ -5481,8 +5336,8 @@
       "docs": "https://help.ui.com/hc/en-us/articles/360012282453-Self-Hosting-a-UniFi-Network-Server"
     },
     "tags": [
-      "self-hosted",
-      "networking"
+      "network",
+      "self-hosted"
     ]
   },
   {
@@ -5497,9 +5352,9 @@
       "docs": "https://github.com/seriousm4x/upsnap#readme"
     },
     "tags": [
-      "network",
-      "monitoring",
       "dashboard",
+      "monitoring",
+      "network",
       "self-hosted"
     ]
   },
@@ -5530,9 +5385,9 @@
       "docs": "https://docs.usesend.com/introduction"
     },
     "tags": [
-      "e-mail",
-      "marketing",
       "business",
+      "email",
+      "marketing",
       "self-hosted"
     ]
   },
@@ -5548,10 +5403,10 @@
       "docs": "https://github.com/valkey-io/valkey"
     },
     "tags": [
-      "database",
       "cache",
-      "redis",
-      "in-memory"
+      "database",
+      "in-memory",
+      "redis"
     ]
   },
   {
@@ -5566,10 +5421,10 @@
       "docs": "https://developer.hashicorp.com/vault/docs"
     },
     "tags": [
-      "security",
-      "secrets",
       "devops",
-      "infrastructure"
+      "infrastructure",
+      "secrets",
+      "security"
     ]
   },
   {
@@ -5583,9 +5438,7 @@
       "website": "",
       "docs": "https://github.com/dani-garcia/vaultwarden/wiki"
     },
-    "tags": [
-      "open-source"
-    ]
+    "tags": []
   },
   {
     "id": "vikunja",
@@ -5600,9 +5453,8 @@
     },
     "tags": [
       "productivity",
-      "tasks",
       "self-hosted",
-      "project-management"
+      "tasks"
     ]
   },
   {
@@ -5618,10 +5470,7 @@
     },
     "tags": [
       "finance",
-      "subscription",
-      "budgeting",
-      "expense-tracking",
-      "spending"
+      "subscription"
     ]
   },
   {
@@ -5636,8 +5485,8 @@
       "docs": "https://github.com/flomp/wanderer#readme"
     },
     "tags": [
-      "mapping",
       "geolocation",
+      "mapping",
       "search",
       "self-hosted"
     ]
@@ -5654,10 +5503,10 @@
       "docs": "https://github.com/lissy93/web-check"
     },
     "tags": [
-      "website-analyzer",
-      "security",
       "performance",
-      "seo"
+      "security",
+      "seo",
+      "website-analyzer"
     ]
   },
   {
@@ -5672,9 +5521,8 @@
       "docs": "https://github.com/wg-easy/wg-easy/wiki"
     },
     "tags": [
-      "vpn",
-      "wireguard",
-      "networking"
+      "network",
+      "wireguard"
     ]
   },
   {
@@ -5689,9 +5537,9 @@
       "docs": "https://docs.requarks.io/"
     },
     "tags": [
+      "documentation",
       "knowledge-base",
-      "self-hosted",
-      "documentation"
+      "self-hosted"
     ]
   },
   {
@@ -5706,9 +5554,9 @@
       "docs": "https://docs.windmill.dev/"
     },
     "tags": [
-      "workflow",
       "automation",
-      "development"
+      "development",
+      "workflow"
     ]
   },
   {
@@ -5723,9 +5571,8 @@
       "docs": "https://github.com/dockur/windows?tab=readme-ov-file#how-do-i-use-it"
     },
     "tags": [
-      "self-hosted",
-      "open-source",
-      "os"
+      "os",
+      "self-hosted"
     ]
   },
   {
@@ -5755,9 +5602,9 @@
       "docs": "https://github.com/rs-loves-bugs/xsshunter#requirements"
     },
     "tags": [
+      "bugbounty",
       "pentest",
-      "xsshunter",
-      "bugbounty"
+      "xsshunter"
     ]
   },
   {
@@ -5772,11 +5619,11 @@
       "docs": "https://github.com/fuzzygrim/yamtrack"
     },
     "tags": [
-      "media",
       "anime",
       "manga",
-      "tracker",
-      "redis"
+      "media",
+      "redis",
+      "tracker"
     ]
   },
   {
@@ -5791,8 +5638,8 @@
       "docs": "https://yourls.org/#documentation"
     },
     "tags": [
-      "url-shortener",
-      "php"
+      "php",
+      "url-shortener"
     ]
   },
   {
@@ -5808,9 +5655,8 @@
     },
     "tags": [
       "downloader",
-      "youtube",
       "media",
-      "webui"
+      "youtube"
     ]
   },
   {
@@ -5825,10 +5671,8 @@
       "docs": "https://www.zabbix.com/documentation/current/en/manual/installation/containers"
     },
     "tags": [
-      "monitoring",
       "infrastructure",
-      "observability",
-      "alerting"
+      "monitoring"
     ]
   },
   {
@@ -5843,7 +5687,7 @@
       "docs": "https://zipline.diced.sh/docs/"
     },
     "tags": [
-      "media system",
+      "media",
       "storage"
     ]
   },
@@ -5859,15 +5703,11 @@
       "docs": "https://zitadel.com/docs/"
     },
     "tags": [
-      "identity",
       "authentication",
-      "authorization",
-      "iam",
-      "security",
-      "oauth",
+      "oauth2",
       "openid-connect",
-      "saml",
-      "multi-tenant"
+      "security",
+      "sso"
     ]
   }
 ]

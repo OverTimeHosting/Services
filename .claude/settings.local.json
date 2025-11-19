@@ -6,7 +6,10 @@
       "Bash(npm run dev)",
       "Bash(npm run build:*)",
       "Bash(pkill:*)",
-      "Bash(npm run sync:*)"
+      "Bash(npm run sync:*)",
+      "Bash(node scripts/analyze-tags.js:*)",
+      "Bash(npm run tags:simplify:*)",
+      "Bash(npm run tags:analyze:*)"
     ],
     "deny": [],
     "ask": []

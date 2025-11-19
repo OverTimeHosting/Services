@@ -10,6 +10,8 @@
     "sync": "node scripts/sync-blueprints.js",
     "update": "node scripts/update-docker-images.js",
     "update:sync": "npm run update && npm run sync",
+    "tags:analyze": "node scripts/analyze-tags.js",
+    "tags:simplify": "node scripts/simplify-tags.js",
     "prebuild": "npm run sync"
   },
   "dependencies": {
