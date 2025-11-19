@@ -1,0 +1,14 @@
+[variables]
+main_domain = "${domain}"
+postgres_password = "${password:16}"
+secret_key = "${password:32}"
+
+[config]
+[[config.domains]]
+serviceName = "dataline"
+port = 8080
+host = "${main_domain}"
+
+[config.env]
+POSTGRES_PASSWORD = "${postgres_password}"
+SECRET_KEY = "${secret_key}"

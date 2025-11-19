@@ -1643,6 +1643,24 @@
     ]
   },
   {
+    "id": "dataline",
+    "name": "Dataline",
+    "version": "latest",
+    "description": "Modern data pipeline and analytics platform for managing and visualizing data workflows.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/dataline/dataline",
+      "website": "https://dataline.io/",
+      "docs": "https://docs.dataline.io/"
+    },
+    "tags": [
+      "analytics",
+      "data-pipeline",
+      "etl",
+      "visualization"
+    ]
+  },
+  {
     "id": "directory-lister",
     "name": "Directory Lister",
     "version": "latest",
