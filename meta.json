@@ -3569,7 +3569,7 @@
   {
     "id": "mongo-express",
     "name": "Mongo Express",
-    "version": "1.0.2",
+    "version": "1.0.2-20-alpine3.19",
     "description": "Mongo Express is a web-based MongoDB admin interface written in Node.js, Express, and Bootstrap. It provides an intuitive UI for managing MongoDB databases, collections, and documents with features like CRUD operations, import/export, and query execution.",
     "logo": "logo.svg",
     "links": {
