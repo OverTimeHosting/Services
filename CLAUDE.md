@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is a Dokploy templates repository that provides a web interface for browsing and managing Docker Compose templates (blueprints). The repository contains:
-- **Frontend app**: React + Vite application with TypeScript
+- **Frontend**: Next.js 15 application with TypeScript
 - **Blueprints**: Docker Compose templates with configuration files
 - **Metadata**: Centralized `meta.json` file with template information
 - **Build scripts**: Node.js utilities for processing metadata
@@ -14,31 +14,39 @@ This is a Dokploy templates repository that provides a web interface for browsin
 
 ```
 othcloud-templates/
-├── app/                          # React frontend application
-│   ├── src/
-│   │   ├── components/          # React components (Navigation, Search, TemplateGrid, etc.)
-│   │   ├── store/               # Zustand state management
-│   │   └── main.tsx
-│   ├── package.json
-│   └── vite.config.ts
-├── blueprints/                   # Docker Compose templates
+├── app/                          # Next.js app directory (App Router)
+│   ├── layout.tsx               # Root layout with theme provider
+│   ├── page.tsx                 # Home page
+│   └── globals.css              # Global styles
+├── src/                          # Source code
+│   ├── components/              # React components (Navigation, Search, TemplateGrid, etc.)
+│   ├── store/                   # Zustand state management
+│   └── lib/                     # Utilities
+├── public/                       # Static files
+│   ├── blueprints/              # Copy of all blueprint folders
+│   ├── meta.json                # Copy of metadata (served publicly)
+│   └── logo.svg                 # Logo files
+├── blueprints/                   # Docker Compose templates (source)
 │   └── {template-id}/           # Each blueprint folder (e.g., ackee, adminer)
 │       ├── docker-compose.yml   # Required: Docker Compose configuration
 │       ├── template.toml        # Required: Template configuration
 │       └── logo.{png,svg}       # Required: Template logo
 ├── build-scripts/
 │   └── process-meta.js          # Production metadata processor
+├── package.json                 # Dependencies and scripts
+├── next.config.js               # Next.js configuration
+├── nixpacks.toml                # Nixpacks build configuration
+├── server.js                    # Custom Next.js server
 ├── meta.json                    # Central metadata for all templates
 └── dedupe-and-sort-meta.js      # Utility to clean and sort meta.json
 ```
 
 ## Development Commands
 
-### Frontend (app/)
+### Frontend (Next.js)
 
 ```bash
-# Install dependencies (from app/ directory)
-cd app
+# Install dependencies (from root directory)
 npm install --legacy-peer-deps
 
 # Run development server (starts on http://localhost:3000)
@@ -86,10 +94,22 @@ The app uses Zustand for state management with persistence middleware (app/src/s
 
 ### Template Data Flow
 
-1. **Build time**: `blueprints/*` and `meta.json` are copied to `app/public/` directory
+1. **Build time**: `blueprints/*` and `meta.json` are copied to `public/` directory
 2. **Runtime**: App fetches `/meta.json` from public folder to populate template list
 3. **User selection**: Fetches individual `/blueprints/{id}/docker-compose.yml` and `template.toml` files dynamically
 4. **Display**: Shows templates in TemplateDialog with syntax-highlighted code editors
+
+### Deployment
+
+This project is configured for **Nixpacks** deployment:
+
+**Dokploy/Railway/Render Settings:**
+- **Build Command**: Automatically detected (npm install --legacy-peer-deps && npm run build)
+- **Start Command**: npm start
+- **Port**: 3000
+- **Node Version**: 20 (specified in nixpacks.toml)
+
+No build path configuration needed - Nixpacks will detect the project from the root directory.
 
 ### Client Components
 
