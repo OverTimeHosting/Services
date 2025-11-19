@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "node server.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync": "node scripts/sync-blueprints.js",
+    "update": "node scripts/update-docker-images.js",
+    "update:sync": "npm run update && npm run sync",
+    "prebuild": "npm run sync"
   },
   "dependencies": {
     "@codemirror/autocomplete": "^6.19.1",
