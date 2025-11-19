@@ -4,8 +4,8 @@ import { ThemeProvider } from "next-themes";
 import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
-  title: "Dokploy Templates",
-  description: "Browse and deploy Dokploy templates",
+  title: "OTHCloud Templates",
+  description: "Browse and deploy OTHCloud templates",
 };
 
 export default function RootLayout({
@@ -14,14 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="dark">
       <head>
         <link rel="icon" type="image/svg+xml" href="/logo.svg" />
       </head>
       <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
