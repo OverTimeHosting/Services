@@ -1,3 +1,5 @@
+"use client";
+
 import { createContext, useContext, useEffect, useState } from "react"
 
 type Theme = "dark" | "light" | "system"
@@ -6,6 +8,9 @@ type ThemeProviderProps = {
   children: React.ReactNode
   defaultTheme?: Theme
   storageKey?: string
+  attribute?: string
+  enableSystem?: boolean
+  disableTransitionOnChange?: boolean
 }
 
 type ThemeProviderState = {
@@ -26,9 +31,18 @@ export function ThemeProvider({
   storageKey = "vite-ui-theme",
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
-  )
+  const [theme, setTheme] = useState<Theme>(defaultTheme)
+
+  // Initialize theme from localStorage after mount (client-side only)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+    const storedTheme = localStorage.getItem(storageKey) as Theme
+    if (storedTheme) {
+      setTheme(storedTheme)
+    }
+  }, [storageKey])
 
   useEffect(() => {
     const root = window.document.documentElement

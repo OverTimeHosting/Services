@@ -18,7 +18,7 @@ import { Check, ChevronsUpDown } from "lucide-react";
 import React from "react";
 import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 import SelectedTags from "./SelectedTags";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 
 const Search = () => {
   const { templates, searchQuery, setSearchQuery, setView, templatesCount, setFilteredTemplates, setTemplatesCount } =
@@ -29,7 +29,9 @@ const Search = () => {
   const [open, setOpen] = React.useState(false);
   const [tagSearch, setTagSearch] = React.useState("");
   const view = useStore((state) => state.view);
-  const [searchParams, setSearchParams] = useSearchParams();
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
 
   // Get all unique tags, safely handle empty templates
   const uniqueTags = React.useMemo(() => {
@@ -80,19 +82,20 @@ const Search = () => {
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newQuery = e.target.value;
     setSearchQuery(newQuery);
+    const params = new URLSearchParams(searchParams.toString());
     if (newQuery) {
-      setSearchParams({ q: newQuery });
+      params.set('q', newQuery);
+      router.push(`${pathname}?${params.toString()}`);
     } else {
-      searchParams.delete("q");
-      setSearchParams(searchParams);
+      params.delete('q');
+      router.push(pathname);
     }
   };
 
   // Clear search and URL params
   const handleClearSearch = () => {
     setSearchQuery("");
-    searchParams.delete("q");
-    setSearchParams(searchParams);
+    router.push(pathname);
   };
 
   return (

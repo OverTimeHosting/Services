@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from 'react';
 import TemplateGrid from "@/components/TemplateGrid";
 import Navigation from "@/components/Navigation";
 import Search from "@/components/Search";
@@ -11,7 +12,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Search />
+      <Suspense fallback={<div className="mx-auto p-4 lg:p-12 border-b w-full">Loading...</div>}>
+        <Search />
+      </Suspense>
       <TemplateGrid view={view} />
     </div>
   );

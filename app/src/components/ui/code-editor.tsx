@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { json } from "@codemirror/lang-json";
 import { yaml } from "@codemirror/lang-yaml";
@@ -14,7 +16,7 @@ import {
   type CompletionResult,
   type Completion,
 } from "@codemirror/autocomplete";
-import { useTheme } from "@/theme-provider";
+import { useTheme } from "next-themes";
 // Docker Compose completion options
 const dockerComposeServices = [
   { label: "services", type: "keyword", info: "Define services" },
