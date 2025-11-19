@@ -1,0 +1,20 @@
+[variables]
+main_domain = "${domain}"
+mongo_root_username = "admin"
+mongo_root_password = "${password:32}"
+me_basicauth_username = "admin"
+me_basicauth_password = "${password:32}"
+
+[config]
+mounts = []
+
+[[config.domains]]
+serviceName = "mongo-express"
+port = 8081
+host = "${main_domain}"
+
+[config.env]
+MONGO_ROOT_USERNAME = "${mongo_root_username}"
+MONGO_ROOT_PASSWORD = "${mongo_root_password}"
+ME_BASICAUTH_USERNAME = "${me_basicauth_username}"
+ME_BASICAUTH_PASSWORD = "${me_basicauth_password}"

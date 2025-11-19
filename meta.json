@@ -3567,6 +3567,24 @@
     ]
   },
   {
+    "id": "mongo-express",
+    "name": "Mongo Express",
+    "version": "1.0.2",
+    "description": "Mongo Express is a web-based MongoDB admin interface written in Node.js, Express, and Bootstrap. It provides an intuitive UI for managing MongoDB databases, collections, and documents with features like CRUD operations, import/export, and query execution.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/mongo-express/mongo-express",
+      "website": "https://github.com/mongo-express/mongo-express",
+      "docs": "https://github.com/mongo-express/mongo-express#readme"
+    },
+    "tags": [
+      "admin",
+      "database",
+      "management",
+      "mongodb"
+    ]
+  },
+  {
     "id": "mixpost",
     "name": "Mixpost",
     "version": "latest",
