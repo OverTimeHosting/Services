@@ -1,0 +1,27 @@
+[variables]
+main_domain = "${domain}"
+postgres_user = "postgres"
+postgres_password = "${password:16}"
+postgres_db = "nextjs_app"
+docker_image = "node:20-alpine"
+cloudinary_cloud_name = ""
+cloudinary_api_key = ""
+cloudinary_api_secret = ""
+encryption_key = "${password:32}"
+
+[config]
+[[config.domains]]
+serviceName = "web"
+port = 3000
+host = "${main_domain}"
+
+[config.env]
+MAIN_DOMAIN = "${main_domain}"
+POSTGRES_USER = "${postgres_user}"
+POSTGRES_PASSWORD = "${postgres_password}"
+POSTGRES_DB = "${postgres_db}"
+DOCKER_IMAGE = "${docker_image}"
+CLOUDINARY_CLOUD_NAME = "${cloudinary_cloud_name}"
+CLOUDINARY_API_KEY = "${cloudinary_api_key}"
+CLOUDINARY_API_SECRET = "${cloudinary_api_secret}"
+ENCRYPTION_KEY = "${encryption_key}"

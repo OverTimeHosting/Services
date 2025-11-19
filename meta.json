@@ -3834,6 +3834,24 @@
     ]
   },
   {
+    "id": "nextjs-postgres",
+    "name": "Next.js with PostgreSQL",
+    "version": "latest",
+    "description": "Next.js application with PostgreSQL database and Cloudinary integration. Full-stack framework for building modern web applications with server-side rendering and API routes.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/vercel/next.js",
+      "website": "https://nextjs.org/",
+      "docs": "https://nextjs.org/docs"
+    },
+    "tags": [
+      "nextjs",
+      "postgresql",
+      "database",
+      "framework"
+    ]
+  },
+  {
     "id": "nginx",
     "name": "Nginx",
     "version": "latest",

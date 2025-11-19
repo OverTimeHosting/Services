@@ -1,13 +1,14 @@
 [variables]
 main_domain = "${domain}"
+db_password = "${password:16}"
+app_secret = "${password:32}"
 
 [config]
-mounts = []
-
 [[config.domains]]
 serviceName = "umami"
-port = 3_000
+port = 3000
 host = "${main_domain}"
 
 [config.env]
-APP_SECRET = "${base64:64}"
+DATABASE_URL = "postgresql://umami:${db_password}@umami-db:5432/umami"
+APP_SECRET = "${app_secret}"
