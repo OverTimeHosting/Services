@@ -9,7 +9,11 @@
       "Bash(npm run sync:*)",
       "Bash(node scripts/analyze-tags.js:*)",
       "Bash(npm run tags:simplify:*)",
-      "Bash(npm run tags:analyze:*)"
+      "Bash(npm run tags:analyze:*)",
+      "WebFetch(domain:hub.docker.com)",
+      "WebSearch",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
