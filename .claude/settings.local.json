@@ -13,7 +13,9 @@
       "WebFetch(domain:hub.docker.com)",
       "WebSearch",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(mkdir:*)",
+      "Bash(node dedupe-and-sort-meta.js:*)"
     ],
     "deny": [],
     "ask": []

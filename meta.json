@@ -2352,6 +2352,21 @@
     ]
   },
   {
+    "id": "games-backend",
+    "name": "Games Backend",
+    "version": "0.0.1",
+    "description": "High-performance game backend server with built-in matchmaking, leaderboards, and session management. Perfect for multiplayer games with MongoDB integration.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/overtimehosting/othcloud",
+      "website": "https://othcloud.xyz/",
+      "docs": "https://docs.othcloud.xyz/"
+    },
+    "tags": [
+      "gameservers"
+    ]
+  },
+  {
     "id": "garage",
     "name": "Garage S3",
     "version": "latest",
@@ -2381,21 +2396,6 @@
     "tags": [
       "s3",
       "storage"
-    ]
-  },
-  {
-    "id": "games-backend",
-    "name": "Games Backend",
-    "version": "0.0.1",
-    "description": "High-performance game backend server with built-in matchmaking, leaderboards, and session management. Perfect for multiplayer games with MongoDB integration.",
-    "logo": "logo.svg",
-    "links": {
-      "github": "https://github.com/overtimehosting/othcloud",
-      "website": "https://othcloud.xyz/",
-      "docs": "https://docs.othcloud.xyz/"
-    },
-    "tags": [
-      "gameservers"
     ]
   },
   {
@@ -3552,6 +3552,81 @@
     ]
   },
   {
+    "id": "minecraft-java-11",
+    "name": "Minecraft Java 11",
+    "version": "1.12 - 1.16.5",
+    "description": "Vanilla Minecraft server using Java 11. This version is only compatible with Minecraft 1.12 through 1.16.5. Uses Pterodactyl Yolks image with automatic server JAR download.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/pterodactyl/yolks",
+      "website": "https://minecraft.net",
+      "docs": "https://minecraft.wiki"
+    },
+    "tags": [
+      "game"
+    ]
+  },
+  {
+    "id": "minecraft-java-16",
+    "name": "Minecraft Java 16",
+    "version": "1.17 - 1.17.1",
+    "description": "Vanilla Minecraft server using Java 16. This version is only compatible with Minecraft 1.17 and 1.17.1. Uses Pterodactyl Yolks image with automatic server JAR download.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/pterodactyl/yolks",
+      "website": "https://minecraft.net",
+      "docs": "https://minecraft.wiki"
+    },
+    "tags": [
+      "game"
+    ]
+  },
+  {
+    "id": "minecraft-java-17",
+    "name": "Minecraft Java 17",
+    "version": "1.18 - 1.20.4",
+    "description": "Vanilla Minecraft server using Java 17. This version is only compatible with Minecraft 1.18 through 1.20.4. Uses Pterodactyl Yolks image with automatic server JAR download.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/pterodactyl/yolks",
+      "website": "https://minecraft.net",
+      "docs": "https://minecraft.wiki"
+    },
+    "tags": [
+      "game"
+    ]
+  },
+  {
+    "id": "minecraft-java-21",
+    "name": "Minecraft Java 21",
+    "version": "1.20.5+",
+    "description": "Vanilla Minecraft server using Java 21. This version is only compatible with Minecraft 1.20.5 and higher. Uses Pterodactyl Yolks image with automatic server JAR download.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/pterodactyl/yolks",
+      "website": "https://minecraft.net",
+      "docs": "https://minecraft.wiki"
+    },
+    "tags": [
+      "game"
+    ]
+  },
+  {
+    "id": "minecraft-java-8",
+    "name": "Minecraft Java 8",
+    "version": "1.0 - 1.11.2",
+    "description": "Vanilla Minecraft server using Java 8. This version is only compatible with legacy Minecraft 1.0 through 1.11.2. Uses Pterodactyl Yolks image with automatic server JAR download.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/pterodactyl/yolks",
+      "website": "https://minecraft.net",
+      "docs": "https://minecraft.wiki"
+    },
+    "tags": [
+      "game"
+    ]
+  },
+  {
     "id": "minio",
     "name": "Minio",
     "description": "Minio is an open source object storage server compatible with Amazon S3 cloud storage service.",
@@ -3564,6 +3639,23 @@
     },
     "tags": [
       "storage"
+    ]
+  },
+  {
+    "id": "mixpost",
+    "name": "Mixpost",
+    "version": "latest",
+    "description": "Mixpost is an open-source social media management tool that allows you to create, schedule, and publish posts across multiple social media platforms from a single interface.",
+    "logo": "mixpost.png",
+    "links": {
+      "github": "https://github.com/inovector/mixpost",
+      "website": "https://mixpost.app/",
+      "docs": "https://docs.mixpost.app/"
+    },
+    "tags": [
+      "management",
+      "scheduling",
+      "social-media"
     ]
   },
   {
@@ -3582,23 +3674,6 @@
       "database",
       "management",
       "mongodb"
-    ]
-  },
-  {
-    "id": "mixpost",
-    "name": "Mixpost",
-    "version": "latest",
-    "description": "Mixpost is an open-source social media management tool that allows you to create, schedule, and publish posts across multiple social media platforms from a single interface.",
-    "logo": "mixpost.png",
-    "links": {
-      "github": "https://github.com/inovector/mixpost",
-      "website": "https://mixpost.app/",
-      "docs": "https://docs.mixpost.app/"
-    },
-    "tags": [
-      "management",
-      "scheduling",
-      "social-media"
     ]
   },
   {

@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: ghcr.io/pterodactyl/yolks:java_17
+    container_name: minecraft-java-17
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    ports:
+      - "${SERVER_PORT}:25565"
+    environment:
+      - VANILLA_VERSION=${VANILLA_VERSION}
+      - SERVER_JARFILE=${SERVER_JARFILE}
+      - JAVA_MEMORY=${JAVA_MEMORY}
+      - EULA=${EULA}
+    volumes:
+      - server-data:/mnt/server
+    working_dir: /mnt/server
+    command: >
+      sh -c "java -Xms${JAVA_MEMORY} -Xmx${JAVA_MEMORY} -jar ${SERVER_JARFILE} nogui"
+
+volumes:
+  server-data:
