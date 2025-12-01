@@ -1,0 +1,73 @@
+[variables]
+SRCDS_TOKEN = ""
+CS2_SERVERNAME = "CS2 Server"
+CS2_PORT = "27015"
+CS2_RCON_PORT = "27020"
+CS2_RCONPW = "${password:16}"
+CS2_PW = ""
+CS2_MAXPLAYERS = "10"
+CS2_GAMETYPE = "0"
+CS2_GAMEMODE = "1"
+CS2_MAPGROUP = "mg_active"
+CS2_STARTMAP = "de_dust2"
+
+[config]
+[config.env]
+SRCDS_TOKEN = "${SRCDS_TOKEN}"
+CS2_SERVERNAME = "${CS2_SERVERNAME}"
+CS2_PORT = "${CS2_PORT}"
+CS2_RCON_PORT = "${CS2_RCON_PORT}"
+CS2_RCONPW = "${CS2_RCONPW}"
+CS2_PW = "${CS2_PW}"
+CS2_MAXPLAYERS = "${CS2_MAXPLAYERS}"
+CS2_GAMETYPE = "${CS2_GAMETYPE}"
+CS2_GAMEMODE = "${CS2_GAMEMODE}"
+CS2_MAPGROUP = "${CS2_MAPGROUP}"
+CS2_STARTMAP = "${CS2_STARTMAP}"
+
+[install_script]
+script = '''
+#!/bin/bash
+# CS2 Server Installation Script
+# Server Files: /home/steam/cs2-dedicated
+
+STEAMCMD_DIR="/home/steam/steamcmd"
+INSTALL_DIR="/home/steam/cs2-dedicated"
+STEAM_APP_ID=730
+
+mkdir -p ${INSTALL_DIR}
+cd ${STEAMCMD_DIR}
+
+echo "=========================================="
+echo "Counter-Strike 2 Server Installation"
+echo "=========================================="
+echo ""
+echo "Downloading CS2 Dedicated Server via SteamCMD..."
+echo ""
+
+./steamcmd.sh +force_install_dir ${INSTALL_DIR} \
+    +login anonymous \
+    +app_update ${STEAM_APP_ID} validate \
+    +quit
+
+if [ $? -eq 0 ]; then
+    echo ""
+    echo "=========================================="
+    echo "CS2 Server Installation Complete!"
+    echo "=========================================="
+    echo ""
+    echo "IMPORTANT: You need a Game Server Login Token (GSLT)"
+    echo "Get one at: https://steamcommunity.com/dev/managegameservers"
+    echo "App ID for CS2: 730"
+    echo ""
+    echo "Game Types & Modes:"
+    echo "  Type 0: Casual (mode 0), Competitive (mode 1), Wingman (mode 2)"
+    echo "  Type 1: Arms Race (mode 0), Demolition (mode 1), Deathmatch (mode 2)"
+    echo ""
+    echo "Default Maps: de_dust2, de_mirage, de_inferno, de_nuke, de_overpass"
+    echo ""
+else
+    echo "Installation failed. Please check your connection and try again."
+    exit 1
+fi
+'''

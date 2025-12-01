@@ -1,0 +1,82 @@
+[variables]
+SESSION_NAME = "ARK Server"
+SERVER_MAP = "TheIsland"
+SERVER_PASSWORD = ""
+ADMIN_PASSWORD = "${password:16}"
+MAX_PLAYERS = "20"
+GAME_PORT = "7777"
+QUERY_PORT = "27015"
+RCON_PORT = "27020"
+UPDATE_ON_START = "true"
+BACKUP_ON_STOP = "true"
+
+[config]
+[config.env]
+SESSION_NAME = "${SESSION_NAME}"
+SERVER_MAP = "${SERVER_MAP}"
+SERVER_PASSWORD = "${SERVER_PASSWORD}"
+ADMIN_PASSWORD = "${ADMIN_PASSWORD}"
+MAX_PLAYERS = "${MAX_PLAYERS}"
+GAME_PORT = "${GAME_PORT}"
+QUERY_PORT = "${QUERY_PORT}"
+RCON_PORT = "${RCON_PORT}"
+UPDATE_ON_START = "${UPDATE_ON_START}"
+BACKUP_ON_STOP = "${BACKUP_ON_STOP}"
+
+[install_script]
+script = '''
+#!/bin/bash
+# ARK: Survival Evolved Server Installation Script
+# Server Files: /ark
+
+STEAMCMD_DIR="/home/steam/steamcmd"
+INSTALL_DIR="/ark/server"
+STEAM_APP_ID=376030
+
+mkdir -p ${INSTALL_DIR}
+cd ${STEAMCMD_DIR}
+
+echo "=========================================="
+echo "ARK: Survival Evolved Server Installation"
+echo "=========================================="
+echo ""
+echo "WARNING: ARK requires significant resources!"
+echo "  - Disk Space: 60GB+ (more with mods)"
+echo "  - RAM: 8GB minimum, 16GB recommended"
+echo "  - CPU: Multi-core recommended"
+echo ""
+echo "Downloading ARK Dedicated Server via SteamCMD..."
+echo "This may take a while due to large file size..."
+echo ""
+
+./steamcmd.sh +force_install_dir ${INSTALL_DIR} \
+    +login anonymous \
+    +app_update ${STEAM_APP_ID} validate \
+    +quit
+
+if [ $? -eq 0 ]; then
+    echo ""
+    echo "=========================================="
+    echo "ARK Server Installation Complete!"
+    echo "=========================================="
+    echo ""
+    echo "Available Maps:"
+    echo "  - TheIsland (default, free)"
+    echo "  - TheCenter (free)"
+    echo "  - Ragnarok (free)"
+    echo "  - Valguero_P (free)"
+    echo "  - CrystalIsles (free)"
+    echo "  - LostIsland (free)"
+    echo "  - Fjordur (free)"
+    echo "  - ScorchedEarth_P (DLC)"
+    echo "  - Aberration_P (DLC)"
+    echo "  - Extinction (DLC)"
+    echo "  - Genesis (DLC)"
+    echo ""
+    echo "Admin Commands: Use ADMIN_PASSWORD to access in-game console"
+    echo ""
+else
+    echo "Installation failed. Please check your connection and try again."
+    exit 1
+fi
+'''

@@ -1,0 +1,74 @@
+[variables]
+SERVER_NAME = "Valheim Server"
+WORLD_NAME = "Dedicated"
+SERVER_PASS = "${password:8}"
+SERVER_PORT = "2456"
+SERVER_PORT_2 = "2457"
+SERVER_PUBLIC = "true"
+BACKUPS = "true"
+BACKUPS_INTERVAL = "43200"
+BACKUPS_MAX_AGE = "3"
+
+[config]
+[config.env]
+SERVER_NAME = "${SERVER_NAME}"
+WORLD_NAME = "${WORLD_NAME}"
+SERVER_PASS = "${SERVER_PASS}"
+SERVER_PORT = "${SERVER_PORT}"
+SERVER_PORT_2 = "${SERVER_PORT_2}"
+SERVER_PUBLIC = "${SERVER_PUBLIC}"
+BACKUPS = "${BACKUPS}"
+BACKUPS_INTERVAL = "${BACKUPS_INTERVAL}"
+BACKUPS_MAX_AGE = "${BACKUPS_MAX_AGE}"
+
+[install_script]
+script = '''
+#!/bin/bash
+# Valheim Server Installation Script
+# Server Files: /opt/valheim
+
+STEAMCMD_DIR="/home/steam/steamcmd"
+INSTALL_DIR="/opt/valheim"
+STEAM_APP_ID=896660
+
+mkdir -p ${INSTALL_DIR}
+cd ${STEAMCMD_DIR}
+
+echo "=========================================="
+echo "Valheim Dedicated Server Installation"
+echo "=========================================="
+echo ""
+echo "Downloading Valheim Dedicated Server via SteamCMD..."
+echo ""
+
+./steamcmd.sh +force_install_dir ${INSTALL_DIR} \
+    +login anonymous \
+    +app_update ${STEAM_APP_ID} validate \
+    +quit
+
+if [ $? -eq 0 ]; then
+    echo ""
+    echo "=========================================="
+    echo "Valheim Server Installation Complete!"
+    echo "=========================================="
+    echo ""
+    echo "Configuration:"
+    echo "  - Server Name: Displayed in server browser"
+    echo "  - World Name: Name of your world save file"
+    echo "  - Password: MUST be at least 5 characters!"
+    echo "  - Ports: 2456 (game) and 2457 (query) UDP"
+    echo ""
+    echo "Backups:"
+    echo "  - Automatic backups enabled by default"
+    echo "  - Interval: Every 12 hours (43200 seconds)"
+    echo "  - Retention: 3 days"
+    echo ""
+    echo "World saves location: /config/worlds_local"
+    echo ""
+    echo "To join: Add server IP:2456 in Valheim server browser"
+    echo ""
+else
+    echo "Installation failed. Please check your connection and try again."
+    exit 1
+fi
+'''

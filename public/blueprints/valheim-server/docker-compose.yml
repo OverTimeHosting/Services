@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  valheim:
+    image: lloesche/valheim-server
+    container_name: valheim-server
+    restart: unless-stopped
+    cap_add:
+      - sys_nice
+    environment:
+      - SERVER_NAME=${SERVER_NAME}
+      - WORLD_NAME=${WORLD_NAME}
+      - SERVER_PASS=${SERVER_PASS}
+      - SERVER_PORT=${SERVER_PORT}
+      - SERVER_PUBLIC=${SERVER_PUBLIC}
+      - BACKUPS=${BACKUPS}
+      - BACKUPS_INTERVAL=${BACKUPS_INTERVAL}
+      - BACKUPS_MAX_AGE=${BACKUPS_MAX_AGE}
+    volumes:
+      - valheim-config:/config
+      - valheim-data:/opt/valheim
+    ports:
+      - "${SERVER_PORT}:2456/udp"
+      - "${SERVER_PORT_2}:2457/udp"
+
+volumes:
+  valheim-config:
+  valheim-data:

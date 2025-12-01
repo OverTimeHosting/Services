@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  cs2:
+    image: joedwards32/cs2
+    container_name: cs2-server
+    restart: unless-stopped
+    environment:
+      - SRCDS_TOKEN=${SRCDS_TOKEN}
+      - CS2_SERVERNAME=${CS2_SERVERNAME}
+      - CS2_PORT=${CS2_PORT}
+      - CS2_RCON_PORT=${CS2_RCON_PORT}
+      - CS2_RCONPW=${CS2_RCONPW}
+      - CS2_PW=${CS2_PW}
+      - CS2_MAXPLAYERS=${CS2_MAXPLAYERS}
+      - CS2_GAMETYPE=${CS2_GAMETYPE}
+      - CS2_GAMEMODE=${CS2_GAMEMODE}
+      - CS2_MAPGROUP=${CS2_MAPGROUP}
+      - CS2_STARTMAP=${CS2_STARTMAP}
+    volumes:
+      - cs2-data:/home/steam/cs2-dedicated
+    ports:
+      - "${CS2_PORT}:27015/tcp"
+      - "${CS2_PORT}:27015/udp"
+      - "${CS2_RCON_PORT}:27020/tcp"
+
+volumes:
+  cs2-data:

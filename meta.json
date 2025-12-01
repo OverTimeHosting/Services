@@ -405,6 +405,21 @@
     ]
   },
   {
+    "id": "ark-server",
+    "name": "ARK: Survival Evolved Server",
+    "version": "latest",
+    "description": "ARK: Survival Evolved dedicated server. This template lets you host your own ARK server with support for all official maps including TheIsland, Ragnarok, and Fjordur. Requires significant resources (60GB+ disk, 8GB+ RAM).",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/hermsi1337/docker-ark-server",
+      "website": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/",
+      "docs": "https://ark.wiki.gg/"
+    },
+    "tags": [
+      "game"
+    ]
+  },
+  {
     "id": "audiobookshelf",
     "name": "Audiobookshelf",
     "version": "2.19.4",
@@ -1519,6 +1534,21 @@
     },
     "tags": [
       "security"
+    ]
+  },
+  {
+    "id": "cs2-server",
+    "name": "Counter-Strike 2 Server",
+    "version": "latest",
+    "description": "Counter-Strike 2 dedicated server. Host your own CS2 server with support for Competitive, Casual, Wingman, Deathmatch, and Arms Race game modes. Requires a Steam Game Server Login Token (GSLT).",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/joedwards32/CS2",
+      "website": "https://store.steampowered.com/app/730/CounterStrike_2/",
+      "docs": "https://developer.valvesoftware.com/wiki/Counter-Strike_2/Dedicated_Servers"
+    },
+    "tags": [
+      "game"
     ]
   },
   {
@@ -4833,6 +4863,21 @@
     ]
   },
   {
+    "id": "rust-server",
+    "name": "Rust Game Server",
+    "version": "latest",
+    "description": "Rust dedicated survival game server. Host your own Rust server with configurable world size, seed, max players, and RCON support. Automatic updates and saves included.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/Didstopia/rust-server",
+      "website": "https://store.steampowered.com/app/252490/Rust/",
+      "docs": "https://wiki.facepunch.com/rust/"
+    },
+    "tags": [
+      "game"
+    ]
+  },
+  {
     "id": "rustdesk",
     "name": "RustDesk",
     "version": "latest",
@@ -5497,6 +5542,21 @@
       "email",
       "marketing",
       "self-hosted"
+    ]
+  },
+  {
+    "id": "valheim-server",
+    "name": "Valheim Server",
+    "version": "latest",
+    "description": "Valheim dedicated Viking survival game server. Host your own Valheim server with automatic backups, world persistence, and easy configuration. Password must be at least 5 characters.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/lloesche/valheim-server-docker",
+      "website": "https://store.steampowered.com/app/892970/Valheim/",
+      "docs": "https://valheim.fandom.com/wiki/Valheim_Wiki"
+    },
+    "tags": [
+      "game"
     ]
   },
   {
