@@ -1,3 +1,9 @@
+[game]
+type = "cs2"
+startup_file = "cs2.sh"
+version_source = "steam"
+steam_app_id = "730"
+
 [variables]
 SRCDS_TOKEN = ""
 CS2_SERVERNAME = "CS2 Server"

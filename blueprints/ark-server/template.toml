@@ -1,3 +1,9 @@
+[game]
+type = "ark"
+startup_file = "ShooterGameServer"
+version_source = "steam"
+steam_app_id = "376030"
+
 [variables]
 SESSION_NAME = "ARK Server"
 SERVER_MAP = "TheIsland"

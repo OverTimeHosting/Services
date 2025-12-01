@@ -1,3 +1,9 @@
+[game]
+type = "rust"
+startup_file = "RustDedicated"
+version_source = "steam"
+steam_app_id = "258550"
+
 [variables]
 RUST_SERVER_NAME = "Rust Server"
 RUST_SERVER_DESCRIPTION = "A Rust Dedicated Server"

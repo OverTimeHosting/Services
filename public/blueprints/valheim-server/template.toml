@@ -1,3 +1,9 @@
+[game]
+type = "valheim"
+startup_file = "valheim_server.x86_64"
+version_source = "steam"
+steam_app_id = "896660"
+
 [variables]
 SERVER_NAME = "Valheim Server"
 WORLD_NAME = "Dedicated"

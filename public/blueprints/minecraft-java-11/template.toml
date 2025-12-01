@@ -1,3 +1,9 @@
+[game]
+type = "minecraft"
+startup_file = "server.jar"
+version_source = "vanilla_api"
+supported_versions = "1.12 - 1.16.5"
+
 [variables]
 VANILLA_VERSION = "1.16.5"
 SERVER_JARFILE = "server.jar"
