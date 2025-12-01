@@ -26,29 +26,53 @@ script = '''
 # Compatible with Minecraft 1.18 - 1.20.4
 # Server Files: /mnt/server
 
+# Install jq if not present
+if ! command -v jq > /dev/null 2>&1; then
+  echo "Installing jq..."
+  apk add --no-cache jq curl
+fi
+
 mkdir -p /mnt/server
 cd /mnt/server
 
-LATEST_VERSION=`curl https://launchermeta.mojang.com/mc/game/version_manifest.json | jq -r '.latest.release'`
-LATEST_SNAPSHOT_VERSION=`curl https://launchermeta.mojang.com/mc/game/version_manifest.json | jq -r '.latest.snapshot'`
+echo "Fetching version manifest..."
+MANIFEST=$(curl -sSL https://launchermeta.mojang.com/mc/game/version_manifest.json)
 
-echo -e "latest version is $LATEST_VERSION"
-echo -e "latest snapshot is $LATEST_SNAPSHOT_VERSION"
+LATEST_VERSION=$(echo "$MANIFEST" | jq -r '.latest.release')
+LATEST_SNAPSHOT_VERSION=$(echo "$MANIFEST" | jq -r '.latest.snapshot')
 
-if [ -z "$VANILLA_VERSION" ] || [ "$VANILLA_VERSION" == "latest" ]; then
-  MANIFEST_URL=$(curl -sSL https://launchermeta.mojang.com/mc/game/version_manifest.json | jq --arg VERSION $LATEST_VERSION -r '.versions | .[] | select(.id== $VERSION )|.url')
-elif [ "$VANILLA_VERSION" == "snapshot" ]; then
-  MANIFEST_URL=$(curl -sSL https://launchermeta.mojang.com/mc/game/version_manifest.json | jq --arg VERSION $LATEST_SNAPSHOT_VERSION -r '.versions | .[] | select(.id== $VERSION )|.url')
+echo "Latest version is $LATEST_VERSION"
+echo "Latest snapshot is $LATEST_SNAPSHOT_VERSION"
+
+if [ -z "$VANILLA_VERSION" ] || [ "$VANILLA_VERSION" = "latest" ]; then
+  VERSION_TO_USE="$LATEST_VERSION"
+elif [ "$VANILLA_VERSION" = "snapshot" ]; then
+  VERSION_TO_USE="$LATEST_SNAPSHOT_VERSION"
 else
-  MANIFEST_URL=$(curl -sSL https://launchermeta.mojang.com/mc/game/version_manifest.json | jq --arg VERSION $VANILLA_VERSION -r '.versions | .[] | select(.id== $VERSION )|.url')
+  VERSION_TO_USE="$VANILLA_VERSION"
 fi
 
-DOWNLOAD_URL=$(curl ${MANIFEST_URL} | jq .downloads.server | jq -r '. | .url')
+echo "Installing Minecraft version: $VERSION_TO_USE"
 
-echo -e "running: curl -o ${SERVER_JARFILE} $DOWNLOAD_URL"
-curl -o ${SERVER_JARFILE} $DOWNLOAD_URL
+MANIFEST_URL=$(echo "$MANIFEST" | jq --arg VERSION "$VERSION_TO_USE" -r '.versions[] | select(.id == $VERSION) | .url')
+
+if [ -z "$MANIFEST_URL" ]; then
+  echo "ERROR: Version $VERSION_TO_USE not found!"
+  exit 1
+fi
+
+VERSION_MANIFEST=$(curl -sSL "$MANIFEST_URL")
+DOWNLOAD_URL=$(echo "$VERSION_MANIFEST" | jq -r '.downloads.server.url')
+
+if [ -z "$DOWNLOAD_URL" ] || [ "$DOWNLOAD_URL" = "null" ]; then
+  echo "ERROR: No server download URL found for version $VERSION_TO_USE"
+  exit 1
+fi
+
+echo "Downloading server from: $DOWNLOAD_URL"
+curl -sSL -o "${SERVER_JARFILE:-server.jar}" "$DOWNLOAD_URL"
 
 echo "eula=true" > eula.txt
 
-echo -e "Install Complete"
+echo "Install Complete!"
 '''
