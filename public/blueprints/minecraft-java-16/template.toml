@@ -26,25 +26,40 @@ script = '''
 # Compatible with Minecraft 1.17 - 1.17.1
 # Server Files: /mnt/server
 
-# Install jq and curl if not present
-install_deps() {
-  if command -v apk > /dev/null 2>&1; then
-    echo "Detected Alpine, using apk..."
-    apk add --no-cache jq curl
-  elif command -v apt-get > /dev/null 2>&1; then
-    echo "Detected Debian/Ubuntu, using apt-get..."
-    apt-get update && apt-get install -y jq curl
-  elif command -v yum > /dev/null 2>&1; then
-    echo "Detected RHEL/CentOS, using yum..."
-    yum install -y jq curl
-  else
-    echo "WARNING: Unknown package manager, assuming jq and curl are available"
+# Setup jq - download static binary if not available
+setup_jq() {
+  if command -v jq > /dev/null 2>&1; then
+    JQ_CMD="jq"
+    return 0
   fi
+
+  echo "jq not found, downloading static binary..."
+
+  # Detect architecture
+  ARCH=$(uname -m)
+  case "$ARCH" in
+    x86_64|amd64) JQ_ARCH="jq-linux-amd64" ;;
+    aarch64|arm64) JQ_ARCH="jq-linux-arm64" ;;
+    armv7l|armhf) JQ_ARCH="jq-linux-armhf" ;;
+    i386|i686) JQ_ARCH="jq-linux-i386" ;;
+    *) echo "ERROR: Unsupported architecture: $ARCH"; exit 1 ;;
+  esac
+
+  # Download jq to temp location
+  JQ_URL="https://github.com/jqlang/jq/releases/download/jq-1.7.1/${JQ_ARCH}"
+  curl -sSL -o /tmp/jq "$JQ_URL"
+  chmod +x /tmp/jq
+  JQ_CMD="/tmp/jq"
+
+  if [ ! -x "$JQ_CMD" ]; then
+    echo "ERROR: Failed to download jq"
+    exit 1
+  fi
+
+  echo "jq downloaded successfully"
 }
 
-if ! command -v jq > /dev/null 2>&1 || ! command -v curl > /dev/null 2>&1; then
-  install_deps
-fi
+setup_jq
 
 mkdir -p /mnt/server
 cd /mnt/server
@@ -52,8 +67,8 @@ cd /mnt/server
 echo "Fetching version manifest..."
 MANIFEST=$(curl -sSL https://launchermeta.mojang.com/mc/game/version_manifest.json)
 
-LATEST_VERSION=$(echo "$MANIFEST" | jq -r '.latest.release')
-LATEST_SNAPSHOT_VERSION=$(echo "$MANIFEST" | jq -r '.latest.snapshot')
+LATEST_VERSION=$(echo "$MANIFEST" | $JQ_CMD -r '.latest.release')
+LATEST_SNAPSHOT_VERSION=$(echo "$MANIFEST" | $JQ_CMD -r '.latest.snapshot')
 
 echo "Latest version is $LATEST_VERSION"
 echo "Latest snapshot is $LATEST_SNAPSHOT_VERSION"
@@ -68,7 +83,7 @@ fi
 
 echo "Installing Minecraft version: $VERSION_TO_USE"
 
-MANIFEST_URL=$(echo "$MANIFEST" | jq --arg VERSION "$VERSION_TO_USE" -r '.versions[] | select(.id == $VERSION) | .url')
+MANIFEST_URL=$(echo "$MANIFEST" | $JQ_CMD --arg VERSION "$VERSION_TO_USE" -r '.versions[] | select(.id == $VERSION) | .url')
 
 if [ -z "$MANIFEST_URL" ]; then
   echo "ERROR: Version $VERSION_TO_USE not found!"
@@ -76,7 +91,7 @@ if [ -z "$MANIFEST_URL" ]; then
 fi
 
 VERSION_MANIFEST=$(curl -sSL "$MANIFEST_URL")
-DOWNLOAD_URL=$(echo "$VERSION_MANIFEST" | jq -r '.downloads.server.url')
+DOWNLOAD_URL=$(echo "$VERSION_MANIFEST" | $JQ_CMD -r '.downloads.server.url')
 
 if [ -z "$DOWNLOAD_URL" ] || [ "$DOWNLOAD_URL" = "null" ]; then
   echo "ERROR: No server download URL found for version $VERSION_TO_USE"
