@@ -4799,6 +4799,24 @@
     ]
   },
   {
+    "id": "remotely",
+    "name": "Remotely",
+    "version": "latest",
+    "description": "A remote control and remote scripting solution, built with .NET 8, Blazor, and SignalR. Provides attended and unattended remote access for Windows and Linux systems.",
+    "logo": "remotely.png",
+    "links": {
+      "github": "https://github.com/immense/Remotely",
+      "website": "https://github.com/immense/Remotely",
+      "docs": "https://github.com/immense/Remotely/wiki"
+    },
+    "tags": [
+      "remote-desktop",
+      "remote-access",
+      "self-hosted",
+      "dotnet"
+    ]
+  },
+  {
     "id": "rocketchat",
     "name": "Rocketchat",
     "version": "6.9.2",
