@@ -1,0 +1,18 @@
+services:
+  remotely:
+    image: immybot/remotely:latest
+    restart: unless-stopped
+    volumes:
+      - remotely-data:/app/AppData
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_HTTP_PORTS=5000
+      - Serilog__MinimumLevel__Override__Microsoft.AspNetCore=Warning
+      - Serilog__MinimumLevel__Override__System=Warning
+      - Remotely_ApplicationOptions__DbProvider=SQLite
+      - Remotely_ConnectionStrings__SQLite=Data Source=/app/AppData/Remotely.db
+
+volumes:
+  remotely-data: {}

@@ -1,0 +1,12 @@
+[variables]
+
+[config]
+
+[[config.domains]]
+serviceName = "remotely"
+port = 5000
+host = "${domain}"
+
+[config.env]
+
+[[config.mounts]]
