@@ -21,15 +21,29 @@ EULA = "${EULA}"
 
 [install_script]
 script = '''
-#!/bin/ash
+#!/bin/sh
 # Vanilla MC Installation Script
 # Compatible with Minecraft 1.0 - 1.11.2
 # Server Files: /mnt/server
 
-# Install jq if not present
-if ! command -v jq > /dev/null 2>&1; then
-  echo "Installing jq..."
-  apk add --no-cache jq curl
+# Install jq and curl if not present
+install_deps() {
+  if command -v apk > /dev/null 2>&1; then
+    echo "Detected Alpine, using apk..."
+    apk add --no-cache jq curl
+  elif command -v apt-get > /dev/null 2>&1; then
+    echo "Detected Debian/Ubuntu, using apt-get..."
+    apt-get update && apt-get install -y jq curl
+  elif command -v yum > /dev/null 2>&1; then
+    echo "Detected RHEL/CentOS, using yum..."
+    yum install -y jq curl
+  else
+    echo "WARNING: Unknown package manager, assuming jq and curl are available"
+  fi
+}
+
+if ! command -v jq > /dev/null 2>&1 || ! command -v curl > /dev/null 2>&1; then
+  install_deps
 fi
 
 mkdir -p /mnt/server
