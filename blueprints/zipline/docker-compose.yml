@@ -3,13 +3,13 @@ services:
     image: postgres:15
     restart: unless-stopped
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DATABASE=postgres
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
     volumes:
       - pg_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -22,7 +22,7 @@ services:
       - CORE_SECRET=${ZIPLINE_SECRET}
       - CORE_HOSTNAME=0.0.0.0
       - CORE_PORT=${ZIPLINE_PORT}
-      - DATABASE_URL=postgres://postgres:postgres@postgres/postgres
+      - DATABASE_URL=${DATABASE_URL}
       - CORE_LOGGER=${ZIPLINE_LOGGER}
       - DATASOURCE_TYPE=local
       - DATASOURCE_LOCAL_DIRECTORY=./uploads

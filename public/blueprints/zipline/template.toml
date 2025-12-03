@@ -1,6 +1,7 @@
 [variables]
 main_domain = "${domain}"
 secret_base = "${base64:64}"
+db_password = "${password:32}"
 
 [config]
 mounts = []
@@ -15,3 +16,7 @@ ZIPLINE_PORT = "3000"
 ZIPLINE_SECRET = "${secret_base}"
 ZIPLINE_RETURN_HTTPS = "false"
 ZIPLINE_LOGGER = "true"
+POSTGRES_USER = "zipline"
+POSTGRES_PASSWORD = "${db_password}"
+POSTGRES_DB = "zipline"
+DATABASE_URL = "postgres://zipline:${db_password}@postgres/zipline"
