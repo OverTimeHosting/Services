@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  rawdogston:
+    image: ghcr.io/devdamo/rawdogston:latest
+    container_name: rawdogston-music
+    restart: unless-stopped
+    env_file: .env
+
+networks:
+  dokploy-network:
+    external: true

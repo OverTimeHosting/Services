@@ -4782,6 +4782,23 @@
     ]
   },
   {
+    "id": "rawdogston",
+    "name": "Rawdogston",
+    "version": "latest",
+    "description": "A Discord music bot for playing audio in voice channels.",
+    "logo": "logo.svg",
+    "links": {
+      "github": "https://github.com/devdamo/rawdogston",
+      "website": "https://github.com/devdamo/rawdogston",
+      "docs": "https://github.com/devdamo/rawdogston"
+    },
+    "tags": [
+      "discord",
+      "music",
+      "bot"
+    ]
+  },
+  {
     "id": "registry",
     "name": "Docker Registry",
     "version": "2",
@@ -5624,7 +5641,11 @@
       "website": "",
       "docs": "https://github.com/dani-garcia/vaultwarden/wiki"
     },
-    "tags": []
+    "tags": [
+      "password-manager",
+      "security",
+      "self-hosted"
+    ]
   },
   {
     "id": "vikunja",
