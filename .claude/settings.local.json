@@ -15,7 +15,11 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(mkdir:*)",
-      "Bash(node dedupe-and-sort-meta.js:*)"
+      "Bash(node dedupe-and-sort-meta.js:*)",
+      "WebFetch(domain:discord.com)",
+      "Bash(curl:*)",
+      "Bash(unzip:*)",
+      "Bash(wget:*)"
     ],
     "deny": [],
     "ask": []
